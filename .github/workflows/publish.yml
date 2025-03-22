@@ -30,13 +30,13 @@ jobs:
     # Build the site
     - name: Build the site
       run: |
-        myst build
+        myst build --html
 
     # Upload the site's HTML as an artifact
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: "_build"
+        path: "_build/html/"
 
     # Deploy the site's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
