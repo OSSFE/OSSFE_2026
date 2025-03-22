@@ -1,0 +1,25 @@
+version: 1
+project:
+  toc:
+  - file: intro
+  - file: abstracts
+  - file: registration
+  - file: program
+  - file: sponsor
+  - file: contact
+  # title:
+  # description:
+  keywords: []
+  authors: [OSSFE community]
+  # github:
+  # bibliography: []
+site:
+  template: book-theme
+  # title:
+  # options:
+  #   logo: my_logo.png
+  nav: []
+  # actions:
+  #   - title: Learn More
+  #     url: https://mystmd.org/guide
+  domains: []
