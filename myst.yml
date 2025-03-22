@@ -7,7 +7,7 @@ project:
   - file: program
   - file: sponsor
   - file: contact
-  # title:
+  title: OSSFE
   # description:
   keywords: []
   authors: [OSSFE community]
@@ -15,9 +15,9 @@ project:
   # bibliography: []
 site:
   template: book-theme
-  # title:
-  # options:
-  #   logo: my_logo.png
+  title: OSSFE
+  options:
+    logo: logo.png
   nav: []
   # actions:
   #   - title: Learn More
