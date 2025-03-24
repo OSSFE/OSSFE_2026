@@ -18,7 +18,18 @@ site:
   title: OSSFE
   options:
     logo: logo.png
-  nav: []
+    hide_toc: true
+  nav:
+  - title: Abstracts
+    url: /abstracts
+  - title: Registration
+    url: /registration
+  - title: Program
+    url: /program
+  - title: Sponsor
+    url: /sponsor
+  - title: Contact
+    url: /contact
   # actions:
   #   - title: Learn More
   #     url: https://mystmd.org/guide
