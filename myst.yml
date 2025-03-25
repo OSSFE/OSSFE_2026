@@ -21,15 +21,15 @@ site:
     hide_toc: true
   nav:
   - title: Abstracts
-    url: https://ossfe.github.io/OSSFE_website_2026//abstracts
+    url: https://ossfe.github.io/OSSFE_website_2026/abstracts
   - title: Registration
-    url: https://ossfe.github.io/OSSFE_website_2026//registration
+    url: https://ossfe.github.io/OSSFE_website_2026/registration
   - title: Program
-    url: https://ossfe.github.io/OSSFE_website_2026//program
+    url: https://ossfe.github.io/OSSFE_website_2026/program
   - title: Sponsor
-    url: https://ossfe.github.io/OSSFE_website_2026//sponsor
+    url: https://ossfe.github.io/OSSFE_website_2026/sponsor
   - title: Contact
-    url: https://ossfe.github.io/OSSFE_website_2026//contact
+    url: https://ossfe.github.io/OSSFE_website_2026/contact
   # actions:
   #   - title: Learn More
   #     url: https://mystmd.org/guide
