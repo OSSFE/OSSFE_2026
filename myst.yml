@@ -16,7 +16,7 @@ project:
   # bibliography: []
 site:
   template: book-theme
-  title: OSSFE
+  title: OSSFE 2026
   options:
     logo: logo.png
     favicon: logo.png
@@ -24,7 +24,7 @@ site:
     hide_footer_links : true
   nav:
   - title: Abstracts
-    url: /abstracts
+    url: /OSSFE_2026/abstracts
   - title: Registration
     url: /registration
   - title: Program
