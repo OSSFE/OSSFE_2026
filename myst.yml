@@ -26,13 +26,13 @@ site:
   - title: Abstracts
     url: /OSSFE_2026/abstracts
   - title: Registration
-    url: /registration
+    url: /OSSFE_2026/registration
   - title: Program
-    url: /program
+    url: /OSSFE_2026/program
   - title: Sponsor
-    url: /sponsor
+    url: /OSSFE_2026/sponsor
   - title: Contact
-    url: /contact
+    url: /OSSFE_2026/contact
   # actions:
   #   - title: Learn More
   #     url: https://mystmd.org/guide
