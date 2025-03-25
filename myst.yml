@@ -1,8 +1,9 @@
 version: 1
 project:
   toc:
-  - file: intro
+  - file: home
   - file: abstracts
+  - file: intro
   - file: registration
   - file: program
   - file: sponsor
@@ -10,7 +11,7 @@ project:
   title: OSSFE
   # description:
   keywords: []
-  authors: [OSSFE community]
+  authors: []
   # github:
   # bibliography: []
 site:
@@ -18,18 +19,20 @@ site:
   title: OSSFE
   options:
     logo: logo.png
+    favicon: logo.png
     hide_toc: true
+    hide_footer_links : true
   nav:
   - title: Abstracts
-    url: https://ossfe.github.io/OSSFE_2026/abstracts
+    url: /abstracts
   - title: Registration
-    url: https://ossfe.github.io/OSSFE_2026/registration
+    url: /registration
   - title: Program
-    file: program
+    url: /program
   - title: Sponsor
-    url: https://ossfe.github.io/OSSFE_2026/sponsor
+    url: /sponsor
   - title: Contact
-    url: https://ossfe.github.io/OSSFE_2026/contact
+    url: /contact
   # actions:
   #   - title: Learn More
   #     url: https://mystmd.org/guide
