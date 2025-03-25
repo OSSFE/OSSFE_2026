@@ -25,7 +25,7 @@ site:
   - title: Registration
     url: https://ossfe.github.io/OSSFE_2026/registration
   - title: Program
-    url: program
+    file: program
   - title: Sponsor
     url: https://ossfe.github.io/OSSFE_2026/sponsor
   - title: Contact
