@@ -8,8 +8,6 @@ exports:
 
 Following on from the [inaugural OSSFE conference in 2025](https://ossfe.github.io/OSSFE_2025) we are delighted to announce the in person OSSFE 2026 conference.
 
-![](assets/OSSFE_location.png)
-
 The **Open Source Software for Fusion Energy (OSSFE) Conference** is a first-of-its-kind event dedicated to the development, use, and advancement of open-source software in the fusion energy community. Whether you're an experienced researcher, developer, or new to the field, OSSFE offers a collaborative platform to share insights, tools, and innovations that push the boundaries of fusion energy research.
 
 Details on registration can be found on the [registration](registration.md) page.
