@@ -16,7 +16,7 @@ Details on registration can be found on the [registration](registration.md) page
  - Abstract Submission Deadline: TBC
  - Registration opens: TBC
  - Notification of Acceptance: TBC
- - Conference Dates: March 10<sup>th</sup> - 12<sup>th</sup>, 2025
+ - Conference Dates: March 10<sup>th</sup> - 12<sup>th</sup>, 2026
 
 # Why OSSFE?
 Open-source software is transforming the way we approach scientific challenges, enabling greater collaboration, transparency, and innovation. Fusion energy, with its complexity and global impact, is a prime area where open-source tools can accelerate breakthroughs. OSSFE brings together experts and newcomers to explore the latest developments in simulation, data management, material science, and more — all with a focus on open-source solutions. If you are interested in sponsoring the event, please take a look at our sponsorship page.
@@ -44,7 +44,7 @@ Open-source software is transforming the way we approach scientific challenges, 
  - Education and Tutorials
  - Others: let us know if you think something's missing
 
-Join us online for OSSFE 2025 and be part of the open-source revolution in fusion energy.
+Join us in Munich for OSSFE 2026 and be part of the open-source revolution in fusion energy.
 
 # Committee
  - Remi Delaporte-Mathurin (MIT)
