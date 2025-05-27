@@ -1,13 +1,12 @@
 version: 1
 project:
   toc:
-  - file: home
-  - file: abstracts
-  - file: intro
-  - file: registration
-  - file: program
-  - file: sponsor
-  - file: contact
+  - file: home.md
+  - file: abstracts.md
+  - file: registration.md
+  - file: program.md
+  - file: sponsor.md
+  - file: contact.md
   title: OSSFE
   # description:
   keywords: []
