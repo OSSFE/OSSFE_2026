@@ -1,6 +1,7 @@
 ---
 title: 'Sponsor'
 license: CC-BY-4.0
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 

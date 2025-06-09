@@ -4,6 +4,7 @@ license: CC-BY-4.0
 exports:
   - format: pdf
     template: ../template
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Following on from the [inaugural OSSFE conference in 2025](https://ossfe.github.io/OSSFE_2025) we are delighted to announce the in person OSSFE 2026 conference.
