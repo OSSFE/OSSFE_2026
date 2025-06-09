@@ -15,11 +15,13 @@ permissions:
   contents: read
   pages: write
   id-token: write
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+
+  # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: 'pages'
   cancel-in-progress: false
+
 jobs:
   deploy:
     environment:
@@ -34,38 +36,9 @@ jobs:
         with:
           node-version: 18.x
       - name: Install MyST Markdown
-        run: |
-          npm install -g mystmd
-          myst --version
-      - name: Debug Directory Structure
-        run: |
-          ls -la
-          cat myst.yml
-      - name: Build with MyST
-        run: |
-          echo "=== MyST Version ==="
-          myst --version
-          
-          echo "=== Current Working Directory ==="
-          pwd
-          
-          echo "=== Repository Contents ==="
-          ls -la
-          
-          echo "=== Building Site ==="
-          myst build --html
-          
-          echo "=== Build Output ==="
-          if [ -d "_build/html" ]; then
-            echo "Build successful! Contents of _build/html:"
-            ls -la _build/html
-          else
-            echo "Build directory not found!"
-            echo "Looking for any HTML files..."
-            find . -type f -name "*.html" | sort
-            echo "Looking for any build directories..."
-            find . -type d -name "*build*" | sort
-          fi
+        run: npm install -g mystmd
+      - name: Build HTML Assets
+        run: myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
