@@ -21,17 +21,18 @@ site:
     favicon: logo.png
     hide_toc: true
     hide_footer_links : true
+    base_url: ""
   nav:
   - title: Abstracts
-    url: /OSSFE_2026/abstracts
+    url: /abstracts
   - title: Registration
-    url: /OSSFE_2026/registration
+    url: /registration
   - title: Program
-    url: /OSSFE_2026/program
+    url: /program
   - title: Sponsorship
-    url: /OSSFE_2026/sponsor
+    url: /sponsor
   - title: Contact
-    url: /OSSFE_2026/contact
+    url: /contact
   # actions:
   #   - title: Learn More
   #     url: https://mystmd.org/guide
