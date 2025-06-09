@@ -21,7 +21,6 @@ site:
     favicon: logo.png
     hide_toc: true
     hide_footer_links : true
-    base_url: ""
   nav:
   - title: Abstracts
     url: /abstracts
