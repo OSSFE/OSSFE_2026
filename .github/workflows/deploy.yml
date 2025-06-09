@@ -41,6 +41,27 @@ jobs:
         run: |
           ls -la
           cat myst.yml
+      - name: Enhanced Debug
+        run: |
+          echo "=== MyST Version ==="
+          myst --version
+          
+          echo "=== Current Working Directory ==="
+          pwd
+          
+          echo "=== All HTML Files ==="
+          find . -type f -name "*.html" | sort
+          
+          echo "=== All Build Directories ==="
+          find . -type d -name "*build*" | sort
+          
+          echo "=== Configuration Dump ==="
+          myst config dump
+          
+          echo "=== Trying Alternative Build Command ==="
+          mkdir -p _build/html
+          myst build --html --output-dir=_build/html --site-base-url=${{ env.BASE_URL }}
+          ls -la _build/html
       - name: Build HTML Assets
         run: |
           # Run with debug output to see what's happening
