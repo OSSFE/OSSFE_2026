@@ -34,14 +34,51 @@ jobs:
         with:
           node-version: 18.x
       - name: Install MyST Markdown
-        run: npm install -g mystmd
+        run: |
+          npm install -g mystmd
+          myst --version
+      - name: Debug Directory Structure
+        run: |
+          ls -la
+          cat myst.yml
       - name: Build HTML Assets
-        # Using the correct syntax for the base-url option
-        run: myst build --html -v --site-base-url=${{ env.BASE_URL }}
+        run: |
+          # Run with debug output to see what's happening
+          myst build --html -v --site-base-url=${{ env.BASE_URL }}
+          # Check if the build directory exists
+          ls -la
+          # Check if the expected output directory exists
+          if [ -d "_build" ]; then
+            echo "_build directory exists"
+            ls -la _build
+            if [ -d "_build/html" ]; then
+              echo "_build/html directory exists"
+              ls -la _build/html
+            else
+              echo "_build/html directory does NOT exist"
+              # Try to find where the output went
+              find . -type d -name "html" | xargs ls -la
+            fi
+          else
+            echo "_build directory does NOT exist"
+            # Look for other build directories
+            find . -type d -name "*build*" | xargs ls -la
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
+        # Continue even if this step fails
+        continue-on-error: true
+      - name: Fallback Upload Path
+        if: failure()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Try an alternative path if the default fails
+          path: './build/html'
+        continue-on-error: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        # Only run if there's a valid artifact
+        if: success()
