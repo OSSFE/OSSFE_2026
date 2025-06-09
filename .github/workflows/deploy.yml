@@ -8,7 +8,6 @@ on:
     branches: [main]
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
-  # You may need to change this to `BASE_URL: ''`
   BASE_URL: /${{ github.event.repository.name }}
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -37,8 +36,8 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Build HTML Assets
-        # Explicitly pass the base URL to the build command
-        run: myst build --html --base-url=${{ env.BASE_URL }}
+        # Using the correct syntax for the base-url option
+        run: myst build --html -v --site-base-url=${{ env.BASE_URL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
