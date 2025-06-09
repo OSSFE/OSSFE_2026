@@ -8,11 +8,8 @@ project:
   - file: sponsor.md
   - file: contact.md
   title: OSSFE
-  # description:
   keywords: []
   authors: []
-  # github:
-  # bibliography: []
 site:
   template: book-theme
   title: OSSFE 2026
@@ -23,16 +20,13 @@ site:
     hide_footer_links : true
   nav:
   - title: Abstracts
-    url: /abstracts
+    url: /OSSFE_2026/abstracts
   - title: Registration
-    url: /registration
+    url: /OSSFE_2026/registration
   - title: Program
-    url: /program
+    url: /OSSFE_2026/program
   - title: Sponsorship
-    url: /sponsor
+    url: /OSSFE_2026/sponsor
   - title: Contact
-    url: /contact
-  # actions:
-  #   - title: Learn More
-  #     url: https://mystmd.org/guide
+    url: /OSSFE_2026/contact
   domains: []
