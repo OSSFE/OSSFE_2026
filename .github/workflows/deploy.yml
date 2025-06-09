@@ -53,11 +53,7 @@ jobs:
           ls -la
           
           echo "=== Building Site ==="
-          # Create the output directory
-          mkdir -p _build/html
-          
-          # Build the site with verbose output and explicit base URL
-          myst build --html --output-dir=_build/html --site-base-url=${{ env.BASE_URL }} -v
+          myst build --html
           
           echo "=== Build Output ==="
           if [ -d "_build/html" ]; then
