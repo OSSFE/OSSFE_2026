@@ -49,12 +49,9 @@ Join us in Munich for OSSFE 2026 and be part of the open-source revolution in fu
 # Committee
  - Remi Delaporte-Mathurin (MIT)
  - Jon Shimwell (Proxima Fusion) 
- - Julianna Mullen (MIT) 
- - Ethan Peterson (MIT) 
- - James Dark (MIT) 
- - Julien Hillairet (CEA) 
- - Patrick Shriwise (ANL) 
- - Samuele Meschini (MIT) 
+ - James Dark (MIT)
+ - Patrick Shriwise (ANL)
+ - Nathan Cummings (UKAEA)
  - Nick Murphy (Center for Astrophysics | Harvard & Smithsonian) 
  
 <!-- 
