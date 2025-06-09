@@ -37,7 +37,8 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Build HTML Assets
-        run: myst build --html
+        # Explicitly pass the base URL to the build command
+        run: myst build --html --base-url=${{ env.BASE_URL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
