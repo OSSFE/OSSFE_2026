@@ -17,14 +17,17 @@ Last year, OSSFE attracted 240+ people from more than 100 different institutions
 :width: 100%
 :align: center
 ```
-[Full-screen figure](https://remdelaportemathurin.github.io/interactive-plots/ossfe_2025_stats/).
+{button}`Full-screen <https://remdelaportemathurin.github.io/interactive-plots/ossfe_2025_stats/>`
 
 If you're interested in sponsoring OSSFE 2026, get in touch with us at ossfecontact@gmail.com !
 
+## Previous sponsors
+```{image} assets/sponsor_logos.png
+```
 
 # Sponsor Packages
 
-If these do not suit you, please consider the [Targeted Sponsorship Options](#targeted-sponsorship-options) below.
+If these do not suit you, please consider the [Targeted Sponsorhip Options](#targeted-sponsorship-options) below.
 |      | Silver | Gold  | Diamond  |
 | -------- | ------- | ------ | ------ |
 | Price | 2,000€ | 5,000€ | 10,000€ |
@@ -55,7 +58,7 @@ acknowledged in the title of the event as Special Thanks To Our Diamond Sponsors
 Your company’s job listings will be published on the event website and emailed out to all event attendees. All OSSFE sponsors have access to the job board. Limit 5 job listings per sponsor.
 
 
-# Targeted Sponsorhip Options
+# Targeted Sponsorship Options
 
 ## Sponsor Prizes
 - all proceeds to be awarded
