@@ -57,7 +57,7 @@ Your company’s job listings will be published on the event website and emailed
 
 ## Targeted Sponsorhip Options
 
-## Sponsor Prizes
+### Sponsor Prizes
 - all proceeds to be awarded
     - 400€ to the winner
     - 100€ to the winners favorite open source dependency
@@ -65,20 +65,20 @@ Your company’s job listings will be published on the event website and emailed
 - Best talk
 - Best open-source project
 
-## Coffee & refreshment breaks
+### Coffee & refreshment breaks
 - 2,000€
 - Four available, sponsor one or multiple-breaks
 - Sponsor name mentioned in signage to be displayed at the refreshment site for the duration of the break
 - Branded refreshment materials (e.g. cups, sleeves, napkins provided by sponsor. - Item and printing cost not included in sponsorship package.)
 - Two complimentary conference registrations
 
-## Welcome reception
+### Welcome reception
 - 3,000€
 - One available
 - Logo advertised at welcome reception at the end of the first day
 - Drinks and finger food for attendees
 
-## Lanyard
+### Lanyard
 - 4,000€
 - One available
 - Logo of choice displayed exclusively on lanyards distributed to all attendees
