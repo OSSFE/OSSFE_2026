@@ -14,9 +14,9 @@ The **Open Source Software for Fusion Energy (OSSFE) Conference** is a first-of-
 Details on registration can be found on the [registration](registration.md) page.
 
 **Key Dates:**
- - Abstract Submission Deadline: TBC
- - Registration opens: TBC
- - Notification of Acceptance: TBC
+ - Abstract Submission Deadline: September 11<sup>th</sup>, 2025
+ - Registration opens: Autumn 2025
+ - Notification of Acceptance: Autumn 2025
  - Conference Dates: March 10<sup>th</sup> - 12<sup>th</sup>, 2026
 
 # Why OSSFE?
