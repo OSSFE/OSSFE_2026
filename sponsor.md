@@ -64,9 +64,10 @@ Your company’s job listings will be published on the event website and emailed
 - all proceeds to be awarded
     - 400€ to the winner
     - 100€ to the winners favorite open source dependency
-- Best student talk
-- Best talk
-- Best open-source project
+- Three available
+    - Best student talk
+    - Best talk
+    - Best open-source project
 
 ## Coffee & refreshment breaks
 - 2,000€
