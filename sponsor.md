@@ -19,7 +19,7 @@ Last year, OSSFE attracted 240+ people from more than 100 different institutions
 ```
 {button}`Full-screen <https://remdelaportemathurin.github.io/interactive-plots/ossfe_2025_stats/>`
 
-If you're interested in sponsoring OSSFE 2026, get in touch with us at ossfecontact@gmail.com !
+If you're interested in sponsoring OSSFE 2026, get in touch with us at contact@ossfe.org !
 
 ## Previous sponsors
 ```{image} assets/sponsor_logos.png
