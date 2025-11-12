@@ -59,7 +59,8 @@ def main():
         time_slot = session_to_time(session)
 
         for idx, (_, item) in enumerate(group.iterrows(), start=1):
-            # filename is last-name of author + first word of title
+            # filename is last name of first author + first word of title
+            # This must match the logic in convert.py
             last_name = item["Last name"]
             first_word_title = item["Title"].replace("-", " ").split()[0]
             filename = f"{last_name}-{first_word_title}.md".lower()
@@ -116,7 +117,8 @@ def main():
         time_slot = session_to_time(session)
 
         for idx, (_, item) in enumerate(group.iterrows(), start=1):
-            # filename is last-name of author + first word of title
+            # filename is last name of first author + first word of title
+            # This must match the logic in convert.py
             last_name = item["Last name"]
             first_word_title = item["Title"].replace("-", " ").split()[0]
             filename = f"{last_name}-{first_word_title}.md".lower()
@@ -124,7 +126,7 @@ def main():
             # remove invalid characters
             filename = filename.replace(" ", "").replace("/", "").replace(":", "").replace(",", "")
 
-            title = f"[{item['Title']}]({filename})"
+            title = f"[{item['Title']}](abstract_files/{filename})"
             presenter = f"{item['First name']} {item['Last name']}"
 
             # breakpoint()
@@ -190,14 +192,14 @@ def main():
     # data = []
     # for index, (_, item) in enumerate(df_demo.iterrows(), start=1):
     #     # filename is last-name of author + first word of title
-    #     last_name = item["List of authors and affiliation"].split(",")[0].split()[0]
+    #     last_name = item["Last name"]
     #     first_word_title = item["Title"].replace("-", " ").split()[0]
     #     filename = f"{last_name}-{first_word_title}.md".lower()
 
     #     # remove invalid characters
     #     filename = filename.replace(" ", "").replace("/", "").replace(":", "").replace(",", "")
 
-    #     title = f"[{item['Title']}](abstracts/{filename})"
+    #     title = f"[{item['Title']}](abstract_files/{filename})"
     #     presenter = item["Name"]
 
     #     institution_of_first_author = ""
@@ -287,7 +289,8 @@ def main():
         data = []
 
         for _, item in df_poster.iterrows():
-            # Extract last name and first word of title
+            # Extract last name of first author and first word of title
+            # This must match the logic in convert.py
             last_name = item["Last name"]
             first_word_title = item["Title"].replace("-", " ").split()[0]
             filename = f"{last_name}-{first_word_title}.md".lower()
@@ -295,7 +298,7 @@ def main():
             # Remove invalid characters
             filename = filename.replace(" ", "").replace("/", "").replace(":", "").replace(",", "")
 
-            title = f"[{item['Title']}](abstracts/{filename})"
+            title = f"[{item['Title']}](abstract_files/{filename})"
             presenter = f"{item['First name']} {item['Last name']}"
             institution_of_first_author = item["Affiliation"]
             poster_id = item["Abstract ID"]
