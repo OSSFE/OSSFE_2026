@@ -13,7 +13,7 @@ from timetable.templates import (
     lunch_template,
     template_list_of_posters,
 )
-from timetable.timeslot import session_to_time
+from timetable.timeslot import session_to_time, breaks, lunches
 
 
 def main():
@@ -98,7 +98,7 @@ def main():
             num_presentations=time_slot.num_presentations,
             table=table,
         )
-        if time_slot.day == "Wednesday":
+        if time_slot.day == "Tuesday":
             sessions_day_1.append((time_slot, formatted_session))
         else:
             sessions_day_2.append((time_slot, formatted_session))
@@ -155,7 +155,7 @@ def main():
             num_presentations=time_slot.num_presentations,
             table=table,
         )
-        if time_slot.day == "Wednesday":
+        if time_slot.day == "Tuesday":
             sessions_day_1.append((time_slot, formatted_session))
         else:
             sessions_day_2.append((time_slot, formatted_session))
@@ -213,7 +213,7 @@ def main():
             num_presentations=time_slot.num_presentations,
             table=table,
         )
-        if time_slot.day == "Wednesday":
+        if time_slot.day == "Tuesday":
             sessions_day_1.append((time_slot, formatted_session))
         else:
             sessions_day_2.append((time_slot, formatted_session))
@@ -234,71 +234,27 @@ def main():
     )
     sessions_day_2.append((S_closing_time_slot, closing_session_str))
 
-    # create item for poster session
-    # S_poster_1_time_slot = session_to_time("session_poster_1")
-    # S_poster_2_time_slot = session_to_time("session_poster_2")
-    # poster_session_str = poster_session.format(
-    #     time_slot=S_poster_1_time_slot,
-    #     room_1=S_poster_1_time_slot.room,
-    #     room_2=S_poster_2_time_slot.room,
-    # )
-    # tables.insert(4, poster_session_str)
-
-    # # create item for demos session
-    # S_demos_time_slot = session_to_time("S_demos")
-
-    # data = []
-    # for index, (_, item) in enumerate(df_demo.iterrows(), start=1):
-    #     # filename is last-name of author + first word of title
-    #     last_name = item["Last name"]
-    #     first_word_title = item["Title"].replace("-", " ").split()[0]
-    #     filename = f"{last_name}-{first_word_title}.md".lower()
-
-    #     # remove invalid characters
-    #     filename = filename.replace(" ", "").replace("/", "").replace(":", "").replace(",", "")
-
-    #     title = f"[{item['Title']}](abstract_files/{filename})"
-    #     presenter = item["Name"]
-
-    #     institution_of_first_author = ""
-    #     try:
-    #         author_affiliation_list = item["List of authors and affiliation"].split(";")
-    #         parts = author_affiliation_list[0].strip().split(",", 1)  # Split only at the first comma
-    #         institution_of_first_author = parts[1].strip()
-    #     except:
-    #         pass
-    #     data.append(
-    #         {
-    #             "ID": f"T{index}",
-    #             "Title": title,
-    #             "Presenter": presenter,
-    #             "Institution": institution_of_first_author,
-    #         }
-    #     )
-    # df_table = pd.DataFrame(data)
-    # table = df_table.to_markdown(index=False)
-    # demo_session_str = demo_session.format(
-    #     time_slot=S_demos_time_slot,
-    #     room=S_demos_time_slot.room,
-    #     demos=table,
-    # )
-    # tables.insert(5, demo_session_str)
+    # create item for poster session 1
+    S_poster_1_time_slot = session_to_time("session_poster_1")
+    S_poster_2_time_slot = session_to_time("session_poster_2")
+    poster_session_1_str = poster_session.format(time_slot=S_poster_1_time_slot)
+    poster_session_2_str = poster_session.format(time_slot=S_poster_2_time_slot)
+    sessions_day_1.append((S_poster_1_time_slot, poster_session_1_str))
+    sessions_day_2.append((S_poster_2_time_slot, poster_session_2_str))
 
     # create item for panel session
     S_panel_time_slot = session_to_time("session_panel")
     presenters = [
-        "[Paul Wilson](bios/wilson.md)",
-        "[Martin Yagi](bios/yagi.md)",
-        "[David Bernhodlt](bios/bernholdt.md)",
-        "[Matt Vernacchia](bios/vernacchia.md)",
-        "[Aiden Fowler](bios/fowler.md)",
+        "[person](bios/last_name.md)",
+        "[person](bios/last_name.md)",
+        "[person](bios/last_name.md)",
+        "[person](bios/last_name.md)",
     ]
     affiliations = [
-        "[University of Wisconsin-Madison](https://www.wisc.edu/)",
-        "[First Light Fusion](https://firstlightfusion.com/)",
-        "[ORNL](https://www.ornl.gov/)",
-        "[CFS](https://cfs.energy/)",
-        "[MIT](https://www.mit.edu/)",
+        "[Affiliation](link to site)",
+        "[Affiliation](link to site)",
+        "[Affiliation](link to site)",
+        "[Affiliation](link to site)",
     ]
     panel_data = []
     for presenter, affiliation in zip(presenters, affiliations):
@@ -314,27 +270,22 @@ def main():
     )
     sessions_day_1.append((S_panel_time_slot, panel_session_str))
 
-    # # create items for breaks
-    # break_1_time_slot = TimeSlot(
-    #     start=datetime(2025, 3, 18, 8, 10, tzinfo=edt),
-    #     end=datetime(2025, 3, 18, 8, 30, tzinfo=edt),
-    # )
-    # break_2_time_slot = TimeSlot(
-    #     start=datetime(2025, 3, 18, 13, 50, tzinfo=edt),
-    #     end=datetime(2025, 3, 18, 14, 10, tzinfo=edt),
-    # )
-    # tables.insert(2, break_template.format(time_slot=break_1_time_slot))
-    # tables.insert(11, break_template.format(time_slot=break_2_time_slot))
+    # create items for breaks
+    for break_timeslot in breaks:
+        if break_timeslot.day == "Tuesday":
+            break_session_str = break_template.format(time_slot=break_timeslot)
+            sessions_day_1.append((break_timeslot, break_session_str))
+        elif break_timeslot.day == "Wednesday":
+            sessions_day_2.append((break_timeslot, break_template.format(time_slot=break_timeslot)))
 
-    # # create item for lunch
-    # lunch_time_slot = TimeSlot(
-    #     start=datetime(2025, 3, 18, 11, 50, tzinfo=edt),
-    #     end=datetime(2025, 3, 18, 12, 50, tzinfo=edt),
-    # )
-    # tables.insert(9, lunch_template.format(time_slot=lunch_time_slot))
+    # create items for lunch
+    for lunch_timeslot in lunches:
+        if lunch_timeslot.day == "Tuesday":
+            sessions_day_1.append((lunch_timeslot, lunch_template.format(time_slot=lunch_timeslot)))
+        elif lunch_timeslot.day == "Wednesday":
+            sessions_day_2.append((lunch_timeslot, lunch_template.format(time_slot=lunch_timeslot)))
 
     # Handle posters
-
     # Separate into two groups based on 'slot_id'
     df_poster_1 = df_poster[df_poster["Slot"] == "session_poster_1"]
     df_poster_2 = df_poster[df_poster["Slot"] == "session_poster_2"]
