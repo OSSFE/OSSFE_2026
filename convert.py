@@ -97,7 +97,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                     row[key] = value.replace("\n", " ")
 
             # filename is last-name of author + first word of title
-            last_name = row["List of authors and affiliations"].split(",")[0].split()[0]
+            last_name = row["Last name"]
             first_word_title = row["Title"].replace("-", " ").split()[0]
             slug = f"{last_name}-{first_word_title}".lower()
 
