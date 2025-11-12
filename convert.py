@@ -13,7 +13,8 @@ license: CC-BY-4.0
 exports:
   - format: pdf
     template: ../../template
-
+site:
+  hide_toc: false
 ---
 
 {text}
@@ -78,7 +79,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("-o", "--output", type=Path, default=None)
     args = vars(parser.parse_args(argv))
 
-    outdir = args["output"] or Path("book") / "abstracts"
+    outdir = args["output"] or Path("abstract_files")
     outdir.mkdir(parents=True, exist_ok=True)
 
     # count the words
