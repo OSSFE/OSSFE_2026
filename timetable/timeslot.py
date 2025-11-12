@@ -1,4 +1,6 @@
 from datetime import datetime, timezone, timedelta
+from typing import NamedTuple
+from enum import IntEnum, auto
 
 PLENARY_TALK_DURATION_MIN = 30
 PLENARY_TALK_DURATION_SEC = PLENARY_TALK_DURATION_MIN * 60
@@ -27,6 +29,8 @@ class TimeSlot:
     type: str
     chair: str
 
+    day: str
+
     num_presentations: int
 
     @property
@@ -35,6 +39,13 @@ class TimeSlot:
             return 1
         duration = self.end - self.start
         return int(duration.total_seconds() / type_to_duration[self.type])
+
+    @property
+    def day(self):
+        if self.start.day == 10:
+            return "Wednesday"
+        elif self.start.day == 11:
+            return "Thursday"
 
     def __init__(self, start, end, room=None, type=None, chair=None):
         self.start = start
@@ -46,7 +57,7 @@ class TimeSlot:
     def __str__(self):
         start_minute = str(self.start.minute).zfill(2)
         end_minute = str(self.end.minute).zfill(2)
-        return f"{self.start.hour}:{start_minute} - {self.end.hour}:{end_minute} ({self.end.tzinfo})"
+        return f"{self.start.hour}:{start_minute} - {self.end.hour}:{end_minute}"
 
 
 def session_to_time(session_id: str):
@@ -60,7 +71,7 @@ def session_to_time(session_id: str):
     elif session_id == "session_closing":
         return TimeSlot(
             start=datetime(2026, 3, 11, 17, 10, tzinfo=cet),
-            end=datetime(2026, 3, 10, 17, 20, tzinfo=cet),
+            end=datetime(2026, 3, 11, 17, 20, tzinfo=cet),
             room="Auditorium",
             type="Closing",
         )
@@ -205,48 +216,48 @@ def session_to_time(session_id: str):
         )
     elif session_id == "session_oral_G":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 10, 20, tzinfo=cet),
-            end=datetime(2026, 3, 10, 11, 20, tzinfo=cet),
+            start=datetime(2026, 3, 11, 10, 20, tzinfo=cet),
+            end=datetime(2026, 3, 11, 11, 20, tzinfo=cet),
             room="Auditorium",
             type="Oral",
             chair="TBC, Affiliation",
         )
     elif session_id == "session_oral_H":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 10, 20, tzinfo=cet),
-            end=datetime(2026, 3, 10, 11, 20, tzinfo=cet),
+            start=datetime(2026, 3, 11, 10, 20, tzinfo=cet),
+            end=datetime(2026, 3, 11, 11, 20, tzinfo=cet),
             room="Projektraum",
             type="Oral",
             chair="TBC, Affiliation",
         )
     elif session_id == "session_oral_I":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 14, 40, tzinfo=cet),
-            end=datetime(2026, 3, 10, 15, 40, tzinfo=cet),
+            start=datetime(2026, 3, 11, 14, 40, tzinfo=cet),
+            end=datetime(2026, 3, 11, 15, 40, tzinfo=cet),
             room="Auditorium",
             type="Oral",
             chair="TBC, Affiliation",
         )
     elif session_id == "session_oral_J":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 14, 40, tzinfo=cet),
-            end=datetime(2026, 3, 10, 15, 40, tzinfo=cet),
+            start=datetime(2026, 3, 11, 14, 40, tzinfo=cet),
+            end=datetime(2026, 3, 11, 15, 40, tzinfo=cet),
             room="Projektraum",
             type="Oral",
             chair="TBC, Affiliation",
         )
     elif session_id == "session_oral_K":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 16, 00, tzinfo=cet),
-            end=datetime(2026, 3, 10, 17, 00, tzinfo=cet),
+            start=datetime(2026, 3, 11, 16, 00, tzinfo=cet),
+            end=datetime(2026, 3, 11, 17, 00, tzinfo=cet),
             room="Auditorium",
             type="Oral",
             chair="TBC, Affiliation",
         )
     elif session_id == "session_oral_L":
         return TimeSlot(
-            start=datetime(2026, 3, 10, 16, 00, tzinfo=cet),
-            end=datetime(2026, 3, 10, 17, 00, tzinfo=cet),
+            start=datetime(2026, 3, 11, 16, 00, tzinfo=cet),
+            end=datetime(2026, 3, 11, 17, 00, tzinfo=cet),
             room="Projektraum",
             type="Oral",
             chair="TBC, Affiliation",
