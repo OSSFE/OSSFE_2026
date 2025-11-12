@@ -9,10 +9,32 @@ github: 'https://github.com/OSSFE/OSSFE_2026'
 
 
 # Register for OSSFE 2026
-We are excited to welcome you to the Open Source Software for Fusion Energy (OSSFE) Conference 2026! Registration is not yet open. If you have any questions regarding the registration process, feel free to reach out to us at ossfecontact@gmail.com.
+We are excited to welcome you to the Open Source Software for Fusion Energy (OSSFE) Conference 2026! 
 
-Registration costs: TBD
+Get tickets at: ossfe2026.eventbrite.com
 
-<!-- :::{iframe} https://forms.gle/9U9WuR2sGLXFKZRRA
-:width: 100%
-::: -->
+If you have any questions regarding the registration process, feel free to reach out to us at ossfecontact@gmail.com.
+
+
+# Local Accommodation
+
+We have arranged special rates with local hotels for conference attendees. Please note: availability is limited.
+
+## Hotel Europa München****
+![](assets/hotels/europa.jpg)
+
+**Address**: [Google maps link](https://maps.app.goo.gl/AQsvX77eZdkGqHUd8)
+
+**Distance from Munich Urban Colab**: 650m
+
+**Rate**: €126.00 per room, per night (March 10-12, 2026)
+
+Includes breakfast, service, and taxes. Minimum 2-night stay.
+
+**To Book**:
+ - Contact the hotel directly
+ - Use booking code: OSSFE
+ - Booking deadline: January 16th, 2026
+ - Cancellation: Free cancellation up to 7 days before arrival
+
+Find more on their [website](https://hotel-europa.de/en/)
