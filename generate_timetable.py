@@ -1,11 +1,8 @@
-from typing import NamedTuple
-from textwrap import dedent
 import pandas as pd
-from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from timetable.templates import (
     template,
-    table_template,
+    oral_session,
     opening_session,
     closing_session,
     poster_session,
@@ -14,7 +11,7 @@ from timetable.templates import (
     break_template,
     lunch_template,
 )
-from timetable.timeslot import TimeSlot, session_to_time
+from timetable.timeslot import session_to_time
 
 
 def main():
@@ -53,7 +50,8 @@ def main():
     grouped = sorted(grouped, key=lambda x: session_to_time(x[0]).start)
 
     # Create a table for each group
-    tables = []
+    tables_day_1 = []
+    tables_day_2 = []
     for session, group in grouped:
         data = []
         time_slot = session_to_time(session)
@@ -84,18 +82,22 @@ def main():
                 }
             )
 
+        session_id = session.replace("session_oral_", "")
+
         df_table = pd.DataFrame(data)
         table = df_table.to_markdown(index=False)
-        tables.append(
-            table_template.format(
-                session_id=session,
-                time_slot=time_slot,
-                room=time_slot.room,
-                chair=time_slot.chair,
-                num_presentations=time_slot.num_presentations,
-                table=table,
-            )
+        formatted_session = oral_session.format(
+            session_id=session_id,
+            time_slot=time_slot,
+            room=time_slot.room,
+            chair=time_slot.chair,
+            num_presentations=time_slot.num_presentations,
+            table=table,
         )
+        if time_slot.day == "Wednesday":
+            tables_day_1.append(formatted_session)
+        else:
+            tables_day_2.append(formatted_session)
 
     # sort tutorials
     df_tutorial.loc[:, "slot_number"] = df_oral["Slot"].str.extract(r"(\d+)").astype(int)
@@ -137,18 +139,22 @@ def main():
                 }
             )
 
+        # remove the session_id from the session string
+
+        session_id = session.replace("session_tut_", "")
         df_table = pd.DataFrame(data)
         table = df_table.to_markdown(index=False)
-        tables.append(
-            table_template.format(
-                session_id=session,
-                time_slot=time_slot,
-                room=time_slot.room,
-                chair=time_slot.chair,
-                num_presentations=time_slot.num_presentations,
-                table=table,
-            )
+        formatted_session = tutorial_session.format(
+            session_id=session_id,
+            time_slot=time_slot,
+            room=time_slot.room,
+            num_presentations=time_slot.num_presentations,
+            table=table,
         )
+        if time_slot.day == "Wednesday":
+            tables_day_1.append(formatted_session)
+        else:
+            tables_day_2.append(formatted_session)
 
     # create item for opening session
     S_opening_time_slot = session_to_time("session_welcome")
@@ -156,11 +162,11 @@ def main():
         time_slot=S_opening_time_slot,
         room=S_opening_time_slot.room,
     )
-    tables.insert(0, opening_session_str)
+    tables_day_1.insert(0, opening_session_str)
 
     # create item for closing session
     S_closing_time_slot = session_to_time("session_closing")
-    tables.append(
+    tables_day_2.append(
         closing_session.format(
             time_slot=S_closing_time_slot,
             room=S_closing_time_slot.room,
@@ -245,7 +251,7 @@ def main():
         chair=S_panel_time_slot.chair,
         table=panel_table,
     )
-    tables.insert(6, panel_session_str)
+    tables_day_1.insert(6, panel_session_str)
 
     # # create items for breaks
     # break_1_time_slot = TimeSlot(
@@ -314,9 +320,10 @@ def main():
     # posters_md_2 = create_markdown_table(df_poster_2)
 
     # (Path("book") / "programme.md").write_text(
-    (Path("programme.md")).write_text(
+    (Path("program.md")).write_text(
         template.format(
-            tables="\n\n".join(tables),
+            tables_day_1="\n\n".join(tables_day_1),
+            tables_day_2="\n\n".join(tables_day_2),
         )
     )
     # (Path("book") / "list_of_posters.md").write_text(
