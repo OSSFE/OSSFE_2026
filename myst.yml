@@ -9,8 +9,10 @@ project:
     hidden: true
   - file: program.md
     children:
-    - file: test.md
+    - file: list_of_posters.md
+    - title: Abstracts
       children:
+        - pattern: abstract_files/*
   - file: sponsor.md
     hidden: true
   - file: contact.md
