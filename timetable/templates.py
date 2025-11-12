@@ -17,31 +17,54 @@ license: CC-BY-4.0
 exports:
   - format: pdf
     template: ../template
+site:
+  hide_toc: false
 ---
 
 Here you will find the schedule and abstracts for the OSSFE 2025 conference
 
-# Schedule
-{tables}
+# Tuesday 
+{tables_day_1}
+
+# Wednesday 
+{tables_day_2}
 """
 )
 
 template_list_of_posters = dedent(
     """---
 title: "List of posters"
+site:
+  hide_toc: false
 ---
 
-Here you will find the posters for the OSSFE 2026 conference
+Here you will find the posters for the OSSFE 2026 conference which will both take place in the Foyer.
 
-The poster session will take place at {poster_session_1_time_slot} on March 10th 
-and {poster_session_2_time_slot} on March 11th in the Foyer.
+Poster session 1 ({poster_session_1_time_slot} Tuesday):
+{poster_session_1}
 
+Poster session 2 ({poster_session_2_time_slot} Wednesday):
+{poster_session_2}
 """
 )
 
-table_template = dedent(
+plenary_session = dedent(
     """\
-## Session {session_id}: {time_slot}
+## Plenary Session {session_id}: {time_slot}
+
+Room: {room}
+
+*Chair*: {chair}
+
+Number of presentations: {num_presentations}
+
+{table}
+"""
+)
+
+oral_session = dedent(
+    """\
+## Oral Session {session_id}: {time_slot}
 
 Room: {room}
 
@@ -55,7 +78,7 @@ Number of presentations: {num_presentations}
 
 opening_session = dedent(
     """\
-## 🎉 Welcome statement by the organising committee: {time_slot}
+## 🎉 Welcome statement: {time_slot}
 
 Room: {room}
 
@@ -83,13 +106,15 @@ A full list of the posters and their abstracts can be found in the [List of post
 
 tutorial_session = dedent(
     """\
-## 🛠️ Tutorial Session: {time_slot}
+## 🛠️ Tutorial Session {session_id}: {time_slot}
 
 Room: {room}
 
 A series of tutorials will be available to attend for the following packages:
 
-{demos}
+Number of presentations: {num_presentations}
+
+{table}
 """
 )
 
