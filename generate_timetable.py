@@ -5,6 +5,7 @@ from timetable.templates import (
     oral_session,
     opening_session,
     closing_session,
+    plenary_session,
     poster_session,
     tutorial_session,
     panel_session,
@@ -36,7 +37,7 @@ def main():
     # remove all linebreaks that would cause the markdown to break
     df = df.replace(r"\n", " ", regex=True)
 
-    df_plenary = df[df["Abstract decision"] == "Oral"].copy()
+    df_plenary = df[df["Abstract decision"] == "Plenary"].copy()
     df_oral = df[df["Abstract decision"] == "Oral"].copy()
     df_poster = df[df["Abstract decision"] == "Poster"].copy()
     df_tutorial = df[df["Abstract decision"] == "Tutorial"].copy()
@@ -90,6 +91,63 @@ def main():
         df_table = pd.DataFrame(data)
         table = df_table.to_markdown(index=False)
         formatted_session = oral_session.format(
+            session_id=session_id,
+            time_slot=time_slot,
+            room=time_slot.room,
+            chair=time_slot.chair,
+            num_presentations=time_slot.num_presentations,
+            table=table,
+        )
+        if time_slot.day == "Wednesday":
+            sessions_day_1.append((time_slot, formatted_session))
+        else:
+            sessions_day_2.append((time_slot, formatted_session))
+
+    # sort plenaries
+    df_plenary.loc[:, "slot_number"] = df_oral["Slot"].str.extract(r"(\d+)").astype(int)
+
+    # Group by day and session
+    grouped = df_plenary.sort_values(by=["Session", "slot_number"]).groupby("Session", sort=True)
+
+    # sort by time
+    grouped = sorted(grouped, key=lambda x: session_to_time(x[0]).start)
+
+    for session, group in grouped:
+        data = []
+        time_slot = session_to_time(session)
+
+        for idx, (_, item) in enumerate(group.iterrows(), start=1):
+            # filename is last name of first author + first word of title
+            # This must match the logic in convert.py
+            last_name = item["Last name"]
+            first_word_title = item["Title"].replace("-", " ").split()[0]
+            filename = f"{last_name}-{first_word_title}.md".lower()
+
+            # remove invalid characters
+            filename = filename.replace(" ", "").replace("/", "").replace(":", "").replace(",", "")
+
+            title = f"[{item['Title']}](abstract_files/{filename})"
+            presenter = f"{item['First name']} {item['Last name']}"
+
+            # breakpoint()
+            talk_id = item["Slot"]
+
+            institution_of_first_author = item["Affiliation"]
+
+            data.append(
+                {
+                    "ID": talk_id,
+                    "Title": title,
+                    "Presenter": presenter,
+                    "Institution": institution_of_first_author,
+                }
+            )
+
+        session_id = session.replace("session_plenary_", "")
+
+        df_table = pd.DataFrame(data)
+        table = df_table.to_markdown(index=False)
+        formatted_session = plenary_session.format(
             session_id=session_id,
             time_slot=time_slot,
             room=time_slot.room,
