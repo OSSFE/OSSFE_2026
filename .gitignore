@@ -1,2 +1,9 @@
 # MyST build outputs
 _build
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+ossfe_conf2026.egg-info/

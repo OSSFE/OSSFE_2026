@@ -2,29 +2,40 @@ version: 1
 project:
   toc:
   - file: index.md
+    hidden: true
   - file: abstracts.md
+    hidden: true
   - file: registration.md
-  - file: program.md
+    hidden: true
+  - file: programme/programme.md
+    children:
+    - file: programme/list_of_posters.md
+    - title: Abstracts
+      children:
+        - pattern: programme/abstracts/*
   - file: sponsor.md
+    hidden: true
   - file: contact.md
-  title: OSSFE
-  keywords: []
-  authors: []
+    hidden: true
+  # title: OSSFE
+  # keywords: []
+  # authors: []
 site:
   template: book-theme
   title: OSSFE 2026
   options:
-    logo: logo.png
-    favicon: logo.png
+    logo: assets/logo.png
+    favicon: assets/logo.png
     hide_toc: true
     hide_footer_links : true
+    folders: true
   nav:
   - title: Abstracts
     url: /abstracts
   - title: Registration
     url: /registration
-  - title: Program
-    url: /program
+  - title: Programme
+    url: /programme/programme
   - title: Sponsorship
     url: /sponsor
   - title: Contact
