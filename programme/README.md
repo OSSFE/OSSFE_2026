@@ -50,18 +50,18 @@ which will create 100 fake abstracts in the file `abstract.csv`. Note that the `
 
 ```
 "Abstract ID",
-"Name",
 "Email",
-"Type of submission",
+"First name",
+"Last name",
+"Affiliation",
 "Topic",
 "Title",
 "Abstract",
-"List of authors and affiliation",
+"List of authors and affiliations",
 "Link to open-source software repository (if applicable)",
-"Recommendation",
-"Decision",
-"slot_id",
-"session_id",
+"Abstract decision",
+"Slot",
+"Session",
 ```
 
 ## Converting `csv` file to MarkDown
@@ -89,7 +89,7 @@ myst start
 ```
 
 you should be able to go to `localhost:3000` to see the online version of the book.
-
+<!-- 
 ## Creating PDFs
 
 In the online version, it is also an option to download each abstract separately. In order to be able to download the abstracts as PDF we need to first generate the PDFs with MyST.
@@ -114,7 +114,7 @@ One thing you might want to do is to download all abstracts in one go. We have c
 python3 merge-abstracts.py
 ```
 
-After retarting the `myst` server (`myst start`) you should now be able to also download the abstracts as PDFs
+After retarting the `myst` server (`myst start`) you should now be able to also download the abstracts as PDFs -->
 
 ## Deploy site
 
