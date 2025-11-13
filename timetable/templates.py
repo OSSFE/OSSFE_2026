@@ -135,13 +135,15 @@ break_template = dedent(
     """\
 ## ☕ Break: {time_slot}
 
-Take the opportunity to make yourself tea or coffee and network with other attendees in the lobby!
+Coffee, tea refreshments and pastries will be served in the Foyer.
 """
 )
 
 lunch_template = dedent(
     """\
 ## 🍽️ Lunch break: {time_slot}
+
+Lunch is provided in the Munich Urban Colab cafeteria (ground floor) for all conference attendees.
 
 """
 )
