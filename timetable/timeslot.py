@@ -43,9 +43,9 @@ class TimeSlot:
     @property
     def day(self):
         if self.start.day == 10:
-            return "Wednesday"
+            return "Tuesday"
         elif self.start.day == 11:
-            return "Thursday"
+            return "Wednesday"
 
     def __init__(self, start, end, room=None, type=None, chair=None):
         self.start = start
@@ -264,3 +264,34 @@ def session_to_time(session_id: str):
         )
 
     raise ValueError(f"Unknown session {session_id}")
+
+
+breaks = [
+    TimeSlot(
+        start=datetime(2026, 3, 10, 10, 00, tzinfo=cet),
+        end=datetime(2026, 3, 10, 10, 20, tzinfo=cet),
+    ),
+    TimeSlot(
+        start=datetime(2026, 3, 10, 15, 40, tzinfo=cet),
+        end=datetime(2026, 3, 10, 16, 00, tzinfo=cet),
+    ),
+    TimeSlot(
+        start=datetime(2026, 3, 11, 10, 00, tzinfo=cet),
+        end=datetime(2026, 3, 11, 10, 20, tzinfo=cet),
+    ),
+    TimeSlot(
+        start=datetime(2026, 3, 11, 15, 40, tzinfo=cet),
+        end=datetime(2026, 3, 11, 16, 00, tzinfo=cet),
+    ),
+]
+
+lunches = [
+    TimeSlot(
+        start=datetime(2026, 3, 10, 12, 20, tzinfo=cet),
+        end=datetime(2026, 3, 10, 13, 40, tzinfo=cet),
+    ),
+    TimeSlot(
+        start=datetime(2026, 3, 11, 12, 20, tzinfo=cet),
+        end=datetime(2026, 3, 11, 13, 40, tzinfo=cet),
+    ),
+]
