@@ -4,7 +4,7 @@ from textwrap import dedent
 template = dedent(
     """---
 title: "OSSFE 2026 Programme"
-subtitle: "OSSFE 2026 programme committee"
+subtitle: "OSSFE 2026 technical programme committee"
 authors:
   - name: James Dark
     affiliations:
