@@ -28,7 +28,7 @@ site:
   hide_toc: false
 ---
 
-Here you will find the schedule and abstracts for the OSSFE 2025 conference
+Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
 # Tuesday 
 {tables_day_1}
