@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional
 
 # Conference timezone
-CET = timezone(timedelta(hours=+1), name="cet")
+TZ = timezone(timedelta(hours=+1), name="cet")
 
 # Session duration configurations (in seconds)
 DURATIONS = {
@@ -192,8 +192,8 @@ def session_to_time(session_id: str) -> TimeSlot:
 
     config = SESSION_SCHEDULE[session_id]
     return TimeSlot(
-        start=datetime(*config["start"], tzinfo=CET),
-        end=datetime(*config["end"], tzinfo=CET),
+        start=datetime(*config["start"], tzinfo=TZ),
+        end=datetime(*config["end"], tzinfo=TZ),
         room=config.get("room"),
         session_type=config.get("type"),
         chair=config.get("chair"),
@@ -202,12 +202,12 @@ def session_to_time(session_id: str) -> TimeSlot:
 
 def get_breaks() -> List[TimeSlot]:
     """Get all break time slots."""
-    return [TimeSlot(datetime(*start, tzinfo=CET), datetime(*end, tzinfo=CET)) for start, end in BREAKS]
+    return [TimeSlot(datetime(*start, tzinfo=TZ), datetime(*end, tzinfo=TZ)) for start, end in BREAKS]
 
 
 def get_lunches() -> List[TimeSlot]:
     """Get all lunch time slots."""
-    return [TimeSlot(datetime(*start, tzinfo=CET), datetime(*end, tzinfo=CET)) for start, end in LUNCHES]
+    return [TimeSlot(datetime(*start, tzinfo=TZ), datetime(*end, tzinfo=TZ)) for start, end in LUNCHES]
 
 
 # Maintain backwards compatibility
