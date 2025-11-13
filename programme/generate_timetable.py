@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple
 
 import pandas as pd
 
-from timetable.templates import (
+from timetable_helpers.templates import (
     break_template,
     closing_session,
     lunch_template,
@@ -23,7 +23,7 @@ from timetable.templates import (
     template_list_of_posters,
     tutorial_session,
 )
-from timetable.timeslot import TimeSlot, get_breaks, get_lunches, session_to_time
+from timetable_helpers.timeslot import TimeSlot, get_breaks, get_lunches, session_to_time
 
 # Configuration - modify these for different conferences
 SESSION_CONFIGS = {
@@ -44,7 +44,7 @@ def create_presentation_row(row: pd.Series) -> dict:
     filename = generate_filename(row["Last name"], row["Title"])
     return {
         "ID": row["Slot"],
-        "Title": f"[{row['Title']}](abstract_files/{filename})",
+        "Title": f"[{row['Title']}](abstracts/{filename})",
         "Presenter": f"{row['First name']} {row['Last name']}",
         "Institution": row["Affiliation"],
     }
@@ -123,7 +123,7 @@ def create_poster_table(df: pd.DataFrame, session_id: str) -> str:
     data = [
         {
             "ID": str(row["Abstract ID"]),
-            "Title": f"[{row['Title']}](abstract_files/{generate_filename(row['Last name'], row['Title'])})",
+            "Title": f"[{row['Title']}](abstracts/{generate_filename(row['Last name'], row['Title'])})",
             "Presenter": f"{row['First name']} {row['Last name']}",
             "Affiliation": row["Affiliation"],
         }
@@ -159,7 +159,7 @@ def main() -> None:
     days = sorted(by_day.keys())  # Automatically handles any number of days
 
     # Write program file (handles 2 days for now, can be extended)
-    Path("program.md").write_text(
+    Path("programme.md").write_text(
         template.format(
             tables_day_1="\n\n".join(by_day.get(days[0], [])),
             tables_day_2="\n\n".join(by_day.get(days[1], [])) if len(days) > 1 else "",

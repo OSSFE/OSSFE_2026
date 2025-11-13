@@ -79,7 +79,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("-o", "--output", type=Path, default=None)
     args = vars(parser.parse_args(argv))
 
-    outdir = args["output"] or Path("abstract_files")
+    outdir = args["output"] or Path("abstracts")
     outdir.mkdir(parents=True, exist_ok=True)
 
     # count the words
