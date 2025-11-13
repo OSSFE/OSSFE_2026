@@ -3,7 +3,7 @@ from textwrap import dedent
 
 template = dedent(
     """---
-title: "OSSFE conference - March 10th - 12th 2026"
+title: "OSSFE 2026 Programme"
 subtitle: "OSSFE 2026 programme committee"
 authors:
   - name: James Dark
