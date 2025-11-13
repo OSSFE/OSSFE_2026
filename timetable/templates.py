@@ -112,7 +112,7 @@ Room: {room}
 
 A series of tutorials will be available to attend for the following packages:
 
-Number of presentations: {num_presentations}
+Number of tutorials: {num_presentations}
 
 {table}
 """
