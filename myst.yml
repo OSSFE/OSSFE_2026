@@ -7,12 +7,12 @@ project:
     hidden: true
   - file: registration.md
     hidden: true
-  - file: program.md
+  - file: programme/programme.md
     children:
-    - file: list_of_posters.md
+    - file: programme/list_of_posters.md
     - title: Abstracts
       children:
-        - pattern: abstract_files/*
+        - pattern: programme/abstracts/*
   - file: sponsor.md
     hidden: true
   - file: contact.md
@@ -24,17 +24,18 @@ site:
   template: book-theme
   title: OSSFE 2026
   options:
-    logo: logo.png
-    favicon: logo.png
+    logo: assets/logo.png
+    favicon: assets/logo.png
     hide_toc: true
     hide_footer_links : true
+    folders: true
   nav:
   - title: Abstracts
     url: /abstracts
   - title: Registration
     url: /registration
-  - title: Program
-    url: /program
+  - title: Programme
+    url: /programme/programme
   - title: Sponsorship
     url: /sponsor
   - title: Contact
