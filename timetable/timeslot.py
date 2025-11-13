@@ -92,26 +92,22 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
         "room": "Foyer",
     },
     # Plenary sessions
-    "session_plenary_1": {
-        "start": (2026, 3, 10, 9, 0),
-        "end": (2026, 3, 10, 10, 0),
-        "room": "Auditorium",
-        "type": "Plenary",
-        "chair": "TBC, Affiliation",
-    },
-    "session_plenary_2": {
-        "start": (2026, 3, 11, 9, 0),
-        "end": (2026, 3, 11, 10, 0),
-        "room": "Auditorium",
-        "type": "Plenary",
-        "chair": "TBC, Affiliation",
-    },
-    "session_plenary_3": {
-        "start": (2026, 3, 11, 13, 40),
-        "end": (2026, 3, 11, 14, 40),
-        "room": "Auditorium",
-        "type": "Plenary",
-        "chair": "TBC, Affiliation",
+    **{
+        f"session_plenary_{i}": {
+            "start": start,
+            "end": end,
+            "room": "Auditorium",
+            "type": "Plenary",
+            "chair": "TBC, Affiliation",
+        }
+        for i, (start, end) in enumerate(
+            [
+                ((2026, 3, 10, 9, 0), (2026, 3, 10, 10, 0)),
+                ((2026, 3, 11, 9, 0), (2026, 3, 10, 10, 0)),
+                ((2026, 3, 11, 13, 40), (2026, 3, 10, 14, 40)),
+            ],
+            start=1,
+        )
     },
     # Tutorial sessions
     **{
