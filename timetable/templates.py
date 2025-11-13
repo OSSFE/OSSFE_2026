@@ -4,15 +4,22 @@ from textwrap import dedent
 template = dedent(
     """---
 title: "OSSFE conference - March 10th - 12th 2026"
+subtitle: "OSSFE 2026 programme committee"
 authors:
   - name: James Dark
     affiliations:
       - Plasma Science and Fusion Centre, MIT
     email: ossfecontact@gmail.com
-  - name: Rémi Delaporte-Mathurin
+  - name: Nathan Cummings
+    affiliations:
+      - UK Atomic Energy Authority
+  - name: Alex Tinguely
     affiliations:
       - Plasma Science and Fusion Centre, MIT
-    email: ossfecontact@gmail.com
+  - name: Jin whan Bae
+    affiliations:
+      - Oak Ridge National Laboratory
+
 license: CC-BY-4.0
 exports:
   - format: pdf
@@ -143,7 +150,7 @@ lunch_template = dedent(
     """\
 ## 🍽️ Lunch break: {time_slot}
 
-Lunch is provided in the Munich Urban Colab cafeteria (ground floor) for all conference attendees.
+Lunch is provided in the Munich Urban Colab restaurant (ground floor) for all conference attendees.
 
 """
 )
