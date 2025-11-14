@@ -72,6 +72,27 @@ def process_presentation_type(df: pd.DataFrame, decision_type: str) -> List[Tupl
     ]
 
 
+def group_parallel_sessions(sessions: List[Tuple[TimeSlot, str]]) -> List[Tuple[TimeSlot, str]]:
+    """Group sessions that happen at the same time under a single time heading."""
+    # Group by time slot
+    by_time = defaultdict(list)
+    for time_slot, content in sessions:
+        by_time[(time_slot.start, time_slot.end)].append((time_slot, content))
+
+    # Create combined entries with time headings
+    result = []
+    for (start, end), group in sorted(by_time.items()):
+        if len(group) > 1:  # Multiple parallel sessions
+            time_slot = group[0][0]  # Use first time slot for the heading
+            time_heading = f"## Sessions: {time_slot}\n\n"
+            combined_content = time_heading + "\n\n".join([content for _, content in group])
+            result.append((time_slot, combined_content))
+        else:  # Single session
+            result.append(group[0])
+
+    return result
+
+
 def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     """Create all special sessions (opening, closing, poster, panel)."""
     sessions = []
@@ -147,9 +168,18 @@ def main() -> None:
     # Load and clean data
     df = pd.read_csv("abstracts.csv").replace(r"\n", " ", regex=True)
 
+    # Process presentation sessions
+    oral_tutorial_sessions = [
+        session for ptype in ["Oral", "Tutorial"] for session in process_presentation_type(df, ptype)
+    ]
+
+    # Group parallel oral/tutorial sessions together
+    grouped_sessions = group_parallel_sessions(oral_tutorial_sessions)
+
     # Collect all sessions
     all_sessions = (
-        [session for ptype in SESSION_CONFIGS for session in process_presentation_type(df, ptype)]
+        grouped_sessions
+        + process_presentation_type(df, "Plenary")
         + create_special_sessions()
         + [(slot, templates.break_template.format(time_slot=slot)) for slot in get_breaks()]
         + [(slot, templates.lunch_template.format(time_slot=slot)) for slot in get_lunches()]
