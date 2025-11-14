@@ -132,6 +132,9 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     slot_hackathon = session_to_time("session_hackathon")
     sessions.append((slot_hackathon, templates.hackathon.format(time_slot=slot_hackathon)))
 
+    slot_lunch_proxima = session_to_time("session_lunch_proxima")
+    sessions.append((slot_lunch_proxima, templates.lunch_proxima.format(time_slot=slot_lunch_proxima)))
+
     return sessions
 
 
