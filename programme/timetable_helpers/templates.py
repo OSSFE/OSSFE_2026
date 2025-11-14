@@ -26,11 +26,11 @@ exports:
     template: ../template
 site:
   hide_toc: false
-  hide_footer_links : false
 ---
 
 Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
+---
 # Tuesday
 {tables_day_1}
 
@@ -70,6 +70,8 @@ Room: {room}
 Number of presentations: {num_presentations}
 
 {table}
+
+---
 """
 )
 
@@ -94,6 +96,8 @@ opening_session = dedent(
 Room: {room}
 
 Presenter: Remi Delaporte-Mathurin
+
+---
 """
 )
 
@@ -104,6 +108,8 @@ closing_session = dedent(
 Room: {room}
 
 Presenter: Remi Delaporte-Mathurin
+
+---
 """
 )
 
@@ -112,6 +118,8 @@ poster_session = dedent(
 ## 🖼️  Poster Session: {time_slot}
 
 A full list of the posters and their abstracts can be found in the [List of posters](list_of_posters.md)
+
+---
 """
 )
 
@@ -126,6 +134,8 @@ A series of tutorials will be available to attend for the following packages:
 Number of tutorials: {num_presentations}
 
 {table}
+
+---
 """
 )
 
@@ -139,6 +149,8 @@ Room: {room}
 
 A panel session will be held with the following members:
 {table}
+
+---
 """
 )
 
@@ -147,6 +159,8 @@ break_template = dedent(
 ## ☕ Break: {time_slot}
 
 Coffee, tea refreshments and pastries will be served in the Foyer.
+
+---
 """
 )
 
@@ -156,15 +170,17 @@ lunch_template = dedent(
 
 Lunch is provided in the Munich Urban Colab restaurant (ground floor) for all conference attendees.
 
+---
 """
 )
 
-lunch_template_proxima = dedent(
+lunch_proxima = dedent(
     """\
 ## 🍽️ Lunch break: {time_slot}
 
 Lunch is provided in the Proxima Fusion office for all Hackathon attendees.
 
+---
 """
 )
 
@@ -172,19 +188,27 @@ proxima_tour = dedent(
     """\
 ## 🚶 Proxima Fusion tour: {time_slot}
 
+|  |  |
+|---|---|
+| ![](../assets/proxima_image.png) | ![](../assets/proxima_facilty.png) |
+
 Join us for an optional social event and get a behind-the-scenes look at Proxima Fusion's facilities.
+
+---
 """
 )
 
 
 hackathon = dedent(
     """\
-## 🖳 OSSFE Hackathon
+## 🖳 OSSFE Hackathon: {time_slot}
 
 An optional add-on event for conference attendees. 
 This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
 contiribution process first-hand.
 
 *Structure and details to be announced*
+
+---
 """
 )
