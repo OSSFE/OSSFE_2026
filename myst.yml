@@ -11,6 +11,7 @@ project:
     children:
     - file: programme/list_of_posters.md
     - title: Abstracts
+      collapsed: true
       children:
         - pattern: programme/abstracts/*
   - file: sponsor.md
