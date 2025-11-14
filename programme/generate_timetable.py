@@ -10,26 +10,14 @@ from typing import Dict, List, Tuple
 
 import pandas as pd
 
-from timetable_helpers.templates import (
-    break_template,
-    closing_session,
-    lunch_template,
-    opening_session,
-    oral_session,
-    panel_session,
-    plenary_session,
-    poster_session,
-    template,
-    template_list_of_posters,
-    tutorial_session,
-)
+import timetable_helpers.templates as templates
 from timetable_helpers.timeslot import TimeSlot, get_breaks, get_lunches, session_to_time
 
 # Configuration - modify these for different conferences
 SESSION_CONFIGS = {
-    "Oral": {"template": oral_session, "prefix": "session_oral_"},
-    "Plenary": {"template": plenary_session, "prefix": "session_plenary_"},
-    "Tutorial": {"template": tutorial_session, "prefix": "session_tut_"},
+    "Oral": {"template": templates.oral_session, "prefix": "session_oral_"},
+    "Plenary": {"template": templates.plenary_session, "prefix": "session_plenary_"},
+    "Tutorial": {"template": templates.tutorial_session, "prefix": "session_tut_"},
 }
 
 
@@ -89,14 +77,17 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     sessions = []
 
     # Opening and closing
-    for session_id, tmpl in [("session_welcome", opening_session), ("session_closing", closing_session)]:
+    for session_id, tmpl in [
+        ("session_welcome", templates.opening_session),
+        ("session_closing", templates.closing_session),
+    ]:
         slot = session_to_time(session_id)
         sessions.append((slot, tmpl.format(time_slot=slot, room=slot.room)))
 
     # Posters
     for session_id in ["session_poster_1", "session_poster_2"]:
         slot = session_to_time(session_id)
-        sessions.append((slot, poster_session.format(time_slot=slot)))
+        sessions.append((slot, templates.poster_session.format(time_slot=slot)))
 
     # Panel
     panel_slot = session_to_time("session_panel")
@@ -104,7 +95,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     sessions.append(
         (
             panel_slot,
-            panel_session.format(
+            templates.panel_session.format(
                 time_slot=panel_slot,
                 room=panel_slot.room,
                 chair=panel_slot.chair,
@@ -112,6 +103,13 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
             ),
         )
     )
+
+    # Proxima tour and hackathon
+    slot_tour = session_to_time("session_proxima_tour")
+    sessions.append((slot_tour, templates.proxima_tour.format(time_slot=slot_tour)))
+
+    slot_hackathon = session_to_time("session_hackathon")
+    sessions.append((slot_hackathon, templates.hackathon.format(time_slot=slot_hackathon)))
 
     return sessions
 
@@ -133,12 +131,15 @@ def create_poster_table(df: pd.DataFrame, session_id: str) -> str:
     return pd.DataFrame(data).to_markdown(index=False)
 
 
-def organize_by_day(sessions: List[Tuple[TimeSlot, str]]) -> Dict[str, List[str]]:
-    """Organize and sort sessions by day."""
+def organize_by_day(sessions: List[Tuple[TimeSlot, str]]) -> Tuple[Dict[str, List[str]], Dict[str, TimeSlot]]:
+    """Organize and sort sessions by day. Returns (sessions_by_day, first_slot_by_day)."""
     by_day = defaultdict(list)
+    first_slot = {}
     for slot, content in sorted(sessions, key=lambda x: x[0].start):
+        if slot.day not in first_slot:
+            first_slot[slot.day] = slot
         by_day[slot.day].append(content)
-    return dict(by_day)
+    return dict(by_day), first_slot
 
 
 def main() -> None:
@@ -150,25 +151,26 @@ def main() -> None:
     all_sessions = (
         [session for ptype in SESSION_CONFIGS for session in process_presentation_type(df, ptype)]
         + create_special_sessions()
-        + [(slot, break_template.format(time_slot=slot)) for slot in get_breaks()]
-        + [(slot, lunch_template.format(time_slot=slot)) for slot in get_lunches()]
+        + [(slot, templates.break_template.format(time_slot=slot)) for slot in get_breaks()]
+        + [(slot, templates.lunch_template.format(time_slot=slot)) for slot in get_lunches()]
     )
 
     # Organize by day
-    by_day = organize_by_day(all_sessions)
-    days = sorted(by_day.keys())  # Automatically handles any number of days
+    by_day, first_slot = organize_by_day(all_sessions)
+    days = sorted(by_day.keys(), key=lambda day: first_slot[day].start)  # Sort by chronological order
 
     # Write program file (handles 2 days for now, can be extended)
     Path("programme.md").write_text(
-        template.format(
+        templates.schedule_template.format(
             tables_day_1="\n\n".join(by_day.get(days[0], [])),
-            tables_day_2="\n\n".join(by_day.get(days[1], [])) if len(days) > 1 else "",
+            tables_day_2="\n\n".join(by_day.get(days[1], [])),
+            tables_day_3="\n\n".join(by_day.get(days[2], [])),
         )
     )
 
     # Write poster list
     Path("list_of_posters.md").write_text(
-        template_list_of_posters.format(
+        templates.template_list_of_posters.format(
             poster_session_1_time_slot=session_to_time("session_poster_1"),
             poster_session_2_time_slot=session_to_time("session_poster_2"),
             poster_session_1=create_poster_table(df, "session_poster_1"),
