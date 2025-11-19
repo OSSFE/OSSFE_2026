@@ -25,6 +25,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Effective core fuelling remains one of the fundamental challenges in magnetically confined fusion plasmas, particularly in reactor-relevant regimes such as those expected in ITER. Among the available strategies, pellet injection has demonstrated the greatest potential for delivering fuel deep into the plasma core [1], where gas puffing is insufficient for effective fueling of reactor-scale plasmas. Nevertheless, the simulation of pellet ablation and deposition is computationally intensive and not particularly well suited for applications requiring fast outputs, such as scenario optimization, real-time control, or digital twin implementations.

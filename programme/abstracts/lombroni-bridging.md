@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Plasma disruptions pose a major challenge for the safe operation of tokamaks, primarily due to the intense electromagnetic (EM) and heat loads they generate on tokamak components. Accurate EM analysis requires efficient and reliable workflows that can bridge plasma physics and engineering design. The traditional approach relies on a two-step process: first, disruption dynamics are modeled with an equilibrium code (e.g. MAXFEA, DINA, CREATE-NL, etc.), and then the resulting evolution is applied to a 3D electromagnetic solver by means of a number of different techniques. While this workflow is well-established, it still exhibits shortcomings, leaving space for improvement and innovation.

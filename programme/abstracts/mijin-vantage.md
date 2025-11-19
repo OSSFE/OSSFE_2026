@@ -28,6 +28,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 In many particle code use cases the simulated particles undergo transformations related to various atomic or molecular processes, which can range from exciting internal degrees of freedom to the production of one or more new particles. For fusion, a use case of major interest is the modeling of neutral particle dynamics in the tokamak exhaust, where plasma-neutral interactions tend to dominate. Recent research highlights in particular the role of molecular processes in diverted plasmas[1,2]. 

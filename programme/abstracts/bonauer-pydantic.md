@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The ecosystem of scientific simulators uses a plethora of different file formats, with each simulator exposing settings and writing outputs in its own ad-hoc manner. Pydantic is the most widely used data validation library for Python, allowing simple declaration of structured data that can be stored in JSON format.

@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The Galerkin Variational Equilibrium Code (GVEC) is a 3D ideal magnetohydrodynamic (MHD) equilibrium solver, which play a central role in the simulation and modelling of stellarators. Ideal MHD equilibria, while being a simple model of the fusion plasma, serve as the starting point for time dependent MHD, stability and turbulence simulations and are used in stellarator optimization, often within proxies for the actual optimization targets. It is therefore vital to compute MHD equilibria accurately and fast.

@@ -22,6 +22,7 @@ exports:
     template: ../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Here you will find the schedule and abstracts for the OSSFE 2026 conference

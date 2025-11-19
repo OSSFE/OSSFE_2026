@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Fusion energy is moving from laboratory demonstration to commercial reality, but investment decisions remain hampered by a lack of financial models that capture its unique physics and cost structures. We present the first open-source, physics-informed financial modelling framework for fusion projects, written in Python with modular, flexible design.

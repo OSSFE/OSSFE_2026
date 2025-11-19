@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 CadQuery (CQ) is a scripted CAD Python library built on the OCCT kernel. The 2.5 CQ release contains a free function API that is completely stateless and as-such addresses many existing usability constraints. It is more suited for advanced modeling use cases, less imposing on the user and allows to build custom abstraction layers easily. I will present its design and demonstrate its capabilities with some examples. Moreover, I will give an update other new functionalities, upcoming plans and show some real life applications.

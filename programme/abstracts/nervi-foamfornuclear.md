@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The open-source library OpenFOAM has been widely applied in the nuclear field, with dedicated developments ranging from specialized thermal-hydraulics, neutronics and fuel behaviour for fission systems to magnetohydrodynamics, liquid-metal flows and gas dynamics in inertial confinement chambers for fusion. While these efforts demonstrate the versatility of OpenFOAM for nuclear studies, they are often limited to stand-alone solvers or case-specific couplings, which restricts their use in comprehensive multiphysics simulations.

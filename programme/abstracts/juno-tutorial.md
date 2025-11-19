@@ -58,6 +58,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The Gkeyll simulation framework is a general-purpose plasma simulation framework being utilized across the plasma sciences, with particular fusion applications in understanding turbulence and transport in axisymmetric reactor configurations such as tokamaks and mirrors. Not only does the framework provide streamlined capabilities for handling the complexities of kinetic modeling in fusion devices, including field-line-following geometries, coupling to neutral particles through Gkeyll’s Boltzmann solver, and a variety of application-specific physics modules such as radiation and sheath boundary conditions, the software stack is sufficiently lightweight yet powerful to also make Gkeyll a useful tool in teaching computational physics. 

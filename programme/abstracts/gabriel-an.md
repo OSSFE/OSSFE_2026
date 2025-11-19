@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 One of the most important challenges for fusion devices with magnetic confinement is the ability to predict and control disruptions. Preserving reactor components and the stability of the plasma requires early identification of anomalous plasma behavior during disruptive events. In this case ‘disruptive events’ signifies the density or magnetic field of the plasma fluctuations. In this work, the authors combine the PlasmaPy Python library with modern machine learning (ML) techniques for anomaly detection in the context of developing an open-source PlasmaPy enhancement pipeline.

@@ -25,6 +25,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Accurate calculation of the magnetic plasma centre and boundary is essential for plasma control in tokamaks. We are developing RT-GSFit [1], a real-time equilibrium reconstruction code designed to calculate the magnetic field configuration with millisecond resolution. The code solves the Grad–Shafranov equation [2, 3], producing solutions consistent with magnetics measurements. 

@@ -34,6 +34,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 A stellarator confines a plasma using a twisting, nonaxisymmetric magnetic field, created by a set of complicated coils. 

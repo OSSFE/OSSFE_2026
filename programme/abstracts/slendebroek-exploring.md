@@ -34,6 +34,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The FUsion Synthesis Engine (FUSE) is an open-source integrated modeling framework that addresses a critical gap in fusion power plant design: the lack of tools capable of simultaneously optimizing plasma physics, engineering systems, and economics while maintaining self-consistency across all subsystems. We present how FUSE's hierarchical actor system enables systematic exploration of the fusion design space through constrained multi-objective optimization, examining over 200,000 integrated designs to reveal non-intuitive trade-offs between capital cost and operational reliability.

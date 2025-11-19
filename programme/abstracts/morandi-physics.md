@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 A deuterium-deuterium (D-D) startup has been proposed as a route to begin operation of magnetic-confinement deuterium-tritium (D-T) fusion power plants (FPP) without an external tritium supply. Such a pathway, if feasible, could mitigate early supply-chain constraints. However, its technical and economic attractiveness remains uncertain.

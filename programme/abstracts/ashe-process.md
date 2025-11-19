@@ -28,6 +28,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 PROCESS is an open-source systems code developed by the UK Atomic Energy Authority to support the conceptual design and feasibility assessment of fusion power plants. Initially implemented in Fortran and nearing the end of its full transition to Python, PROCESS models the entire fusion plant system using simplified yet robust 0-1D models. Its core strength lies in enabling self-consistent design optimization by balancing performance metrics, cost considerations, engineering and physical constraints.

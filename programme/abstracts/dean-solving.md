@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Nuclear fusion problems present a wide range of simulation challenges. Whole-system models are often required, with coupling between solid mechanics, fluid dynamics, heat transfer, and electromagnetism. Accurate simulations require advanced numerical schemes that are tailored to the nature of the governing equations in each domain, with robust coupling strategies. To make these high-fidelity simulations viable, scalable algorithms are required that exploit modern parallel high-performance computing architectures, such as GPUs.

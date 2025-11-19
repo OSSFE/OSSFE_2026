@@ -25,6 +25,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 As both Gen IV fission and the global fusion community take strides into spaces that have heretofore been unexplored c.f. the high temperature, neutron rich environments they both see, the role of simulation in predicting future performance is critical. If we are to take confident steps in predicting mission critical parameters and material lifetimes; nuclear heating, thermal loading, fatigue failure, neutron induced toughness, change in ductile-to-brittle transition temperature then first principles based approaches are critical as there is no experimental data from which we can build the parameterisations which are historically used. We must rely on models that require no calibration, and furthermore we must reduce the role of assumption in our models, along with boundary conditions as both of these drive and limit emergent phenomena. It is likely that Rumsfeldian known-unknowns and unknown-knowns will emerge due to the interaction between physics in such complex systems as fusion reactors. Therefore simulation systems also must be made which allow for the arbitrary linkage of physics. The limitations mentioned before, i.e. the need to reduce boundary conditions and assumptions drives us to model more and more complete and complex models of the physical system, which drives a focus on software implementations which do not prohibit these requirements.  

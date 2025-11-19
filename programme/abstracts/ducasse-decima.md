@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The Monte Carlo N-Particle code (MCNP) is a reference tool for neutron and photon transport, widely used in reactor physics, shielding, radiological protection, detector development, and fusion neutronics, including tokamaks. Conventional output estimators (e.g. tally results) provide averaged quantities such as fluxes or spectra, whereas PTRAC (Particle Track Output) files record the full history of each simulated particle from source to termination, including primary and secondary interactions. This trajectory-resolved information enables targeted analyses for detectors, plasma diagnostics, and reactor studies, but remains extremely difficult to exploit due to the complexity and size of the files, often containing millions of events.

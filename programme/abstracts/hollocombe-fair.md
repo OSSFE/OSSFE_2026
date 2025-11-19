@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Fusion data scientists spend the majority of their time preparing data — cleaning, transforming, and converting it between formats — rather than analysing it and extracting new insights. This process requires scientists to convert data between different formats and structures, usually via a manual and error-prone process.
