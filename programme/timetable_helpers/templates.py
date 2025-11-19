@@ -26,6 +26,7 @@ exports:
     template: ../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Here you will find the schedule and abstracts for the OSSFE 2026 conference
@@ -47,6 +48,7 @@ template_list_of_posters = dedent(
 title: "List of posters"
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Here you will find the posters for the OSSFE 2026 conference which will both take place in the Foyer.

@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 In this work, we present a set of software tools for Uncertainty Quantification and Sensitivity Analysis of solid Lithium ceramics-based Tritium breeding module modelling.

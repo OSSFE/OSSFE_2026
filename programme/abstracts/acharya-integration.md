@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The transition to commercially viable fusion energy necessitates rapid, reliable, and iterative design cycles. Open-source fusion codes offer important, high-fidelity capabilities for core fusion technology, particularly in domains like neutronics transport (e.g., OpenMC, MCNP) and advanced plasma physics. 

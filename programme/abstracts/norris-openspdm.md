@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Simulation Process and Data Management solutions, now known as Digital Engineering for Modelling and Simulation, have been used by leading engineering and fusion  research organisations for many years to ensure FAIR (Find, Access, Interoperate, Reuse) data management, Digital Thread traceability, assure quality of simulation results, increase productivity and engineering throughput. Leading users of SPDM include BMW, Audi and Sandia Labs. 

@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Renaissance Fusion (RF) has systematically leveraged open-source software (OSS) for reactor design and modeling and extends community tools to meet its specific needs and goals. We present Stellacode, a differentiable optimization code for stellarator coil design that solves coil optimization problems using truncated singular value decomposition (TSVD) together with the Tikhonov regularization strategy implemented in the REGCOIL algorithm [1]. In addition, Stellacode supports targeting quadratic functionals of the current density, such as current curvature, thereby mitigating coil complexity and reducing the prevalence of windowpane-like coils. 

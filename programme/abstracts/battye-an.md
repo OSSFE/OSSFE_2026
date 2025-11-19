@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Digital engineering is reshaping fusion R&D, and the in-development **Divertor Digital Twin Environment (DDTE)** aims to provide an end-to-end, *open-source* workflow that shortens the path from late-stage divertor design to plant operation readiness. The DDTE is organised around three complementary flavours, each deliberately modular so that best-in-class community codes can be swapped in as they mature.

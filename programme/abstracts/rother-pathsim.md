@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 PathSim is an open-source Python simulation framework designed for block-based dynamic system modeling as an open source replacement for Simulink or Aspen. The framework addresses the need for native Python simulation tools supporting signal flow diagram paradigms, enabling seamless integration with the broader scientific computing ecosystem used in fusion research.

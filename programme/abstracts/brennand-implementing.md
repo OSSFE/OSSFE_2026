@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 During the development and maintenance of any long term service such as the fairmast data service how the underlying systems are monitored and updated can play a critical role in the services success. As such as part the fairmast team I have implemented a monitoring and alerting system as well as a continuous deployment pipeline for the fairmast data service. The data service itself consists mostly of two parts: A metadatabase hosted on a server accessible via an api where users can search through the many signals recorded during the many shots done at the mast device. The other part of the service is the full record of the shots which are stored in cloud storage, the addresses of which are available through the metadatabase. 

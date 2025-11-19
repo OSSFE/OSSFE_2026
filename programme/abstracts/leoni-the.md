@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 In this talk we present FEniCS, a powerful and versatile framework for the solution of general Partial Differential Equations via the Finite Element method.

@@ -10,6 +10,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 GenF, a subsidiary of the Thales Group, is pioneering the development and commercialization of direct-drive inertial confinement fusion (ICF) technology in France. A major challenge in fusion power plant design is the reaction chamber, which must integrate the first wall (FW), structural materials, tritium breeding and cooling systems. In ICF reactors, the FW is subjected to pulsed loads of X-rays, energetic ions, and neutrons produced during fusion reactions.

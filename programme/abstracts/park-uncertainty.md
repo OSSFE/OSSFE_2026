@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 This study presents a detailed neutronics simulation of a Volumetric Neutron Source (VNS) using the OpenMC Monte Carlo code together with the JEFF-4.0 nuclear data library. The VNS is considered a key experimental facility for testing and validating structural materials and components relevant to future fusion power plants, such as DEMO, thereby requiring accurate and high-fidelity neutronics simulations to support its design and performance evaluation.

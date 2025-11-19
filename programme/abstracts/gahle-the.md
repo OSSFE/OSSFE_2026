@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 AI and Big Data applications have a fundamental dependency on data infrastructure that provides appropriate, curated, and unified datasets in line with FAIR data principles, which can be programmatically integrated into development pipelines [1]. To support AI applications in fusion, the IAEA is developing the Fusion Data Lake, a modern and scalable solution for discovering and creating datasets for AI-driven research. The project has three main components:

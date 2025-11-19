@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The cooling systems of irradiated components in nuclear fusion installations are often characterized by complex internal fluid-dynamics and neutron fields. Therefore, the simulation of the radioisotopes which are generated and carried through these systems constitutes a multi-physics problem that benefits from the application of coupled CFD and neutronics codes. Coolants considered for future fusion power plants, such as FLiBe, generate, through various nuclear reaction channels, a set of radioisotopes that require tracking for radioprotection purposes. In addition, impurities present in the coolant extend the number of radioisotopes generated from neutron-induced transmutations which can have a significant impact during machine shutdown.

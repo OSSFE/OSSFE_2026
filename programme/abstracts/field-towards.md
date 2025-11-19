@@ -43,6 +43,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Machine Learning (ML) is increasingly being applied in the domains of plasma science and fusion energy research [1], with models supporting a wide range of common tasks, such as event identification or disruption prediction [2]. One such example is the ENEJETIC model [3], which identifies frames from JET camera data which contain UFOs – small fragments of debris ejected from tiles which heat up and glow brightly, before being absorbed into the plasma. These UFOs have been shown to cause disruptions [4], making reliable detection methods essential.

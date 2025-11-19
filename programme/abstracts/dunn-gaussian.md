@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Accurate neutron flux characterization is essential for evaluating the tritium breeding ratio (TBR) in fusion systems. The LIBRA group at MIT operates a tritium breeding platform coupling a lithium-containing molten salt tank with a compact deuterium-tritium (D-T) neutron generator. Here we present an open-source approach to measuring and modeling the angular dependence of the 14.1 MeV neutron flux emitted by the generator.

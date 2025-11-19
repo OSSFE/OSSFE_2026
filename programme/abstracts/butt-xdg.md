@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 XDG (Accelerated Discretized Geometry) [1] is a new API being developed to provide users with a robust set of methods to perform spatial queries against a discretized CAD geometry for particle transport operations in scientific simulations. It has been primarily designed for use with the open-source Monte Carlo particle transport code OpenMC. XDG stands on the shoulders of the Direct Accelerated Geometry Monte Carlo (DAGMC) [2] toolkit and its development team, from which it draws significant guidance and inspiration. Various members of the DAGMC development team are collaborators and contributors to the XDG project. 

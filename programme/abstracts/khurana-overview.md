@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 FESTIM (Finite Element Simulation of Tritium In Materials) is an open-source finite element code developed in Python for simulating hydrogen transport in materials. Initially motivated by challenges in fusion energy, FESTIM has since been applied more broadly, including studies of hydride formation, hydrogen embrittlement, tritium permeation into coolants, and tritium inventory assessment. Built on the FEniCS framework, FESTIM enables multi-dimensional, multi-material simulations with multiphysics coupling capabilities (OpenFOAM for thermo-hydraulics and OpenMC for neutronics)
