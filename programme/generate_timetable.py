@@ -31,10 +31,10 @@ def create_presentation_row(row: pd.Series) -> dict:
     """Create a single presentation data row."""
     filename = generate_filename(row["Last name"], row["Title"])
     return {
-        "ID": row["Slot"],
-        "Title": f"[{row['Title']}](abstracts/{filename})",
-        "Presenter": f"{row['First name']} {row['Last name']}",
-        "Institution": row["Affiliation"],
+        "&nbsp; ID": row["Slot"],
+        "&nbsp; Title": f"[{row['Title']}](abstracts/{filename})",
+        "&nbsp; Presenter": f"{row['First name']} {row['Last name']}",
+        "&nbsp; Organisation": row["Affiliation"],
     }
 
 
@@ -120,7 +120,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
                 time_slot=panel_slot,
                 room=panel_slot.room,
                 chair=panel_slot.chair,
-                table=pd.DataFrame(panel_data).to_markdown(index=False),
+                table=pd.DataFrame(panel_data).to_markdown(index=False, colalign=["left", "left"]),
             ),
         )
     )
@@ -144,10 +144,10 @@ def create_poster_table(df: pd.DataFrame, session_id: str) -> str:
 
     data = [
         {
-            "ID": str(row["Abstract ID"]),
-            "Title": f"[{row['Title']}](abstracts/{generate_filename(row['Last name'], row['Title'])})",
-            "Presenter": f"{row['First name']} {row['Last name']}",
-            "Affiliation": row["Affiliation"],
+            "&nbsp; ID": str(row["Abstract ID"]),
+            "&nbsp; Title": f"[{row['Title']}](abstracts/{generate_filename(row['Last name'], row['Title'])})",
+            "&nbsp; Presenter": f"{row['First name']} {row['Last name']}",
+            "&nbsp; Affiliation": row["Affiliation"],
         }
         for _, row in filtered.iterrows()
     ]
@@ -172,12 +172,12 @@ def main() -> None:
     df = pd.read_csv("abstracts.csv").replace(r"\n", " ", regex=True)
 
     # Process presentation sessions
-    oral_tutorial_sessions = [
+    presentation_sessions = [
         session for ptype in ["Oral", "Tutorial"] for session in process_presentation_type(df, ptype)
     ]
 
     # Group parallel oral/tutorial sessions together
-    grouped_sessions = group_parallel_sessions(oral_tutorial_sessions)
+    grouped_sessions = group_parallel_sessions(presentation_sessions)
 
     # Collect all sessions
     all_sessions = (
