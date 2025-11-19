@@ -7,6 +7,9 @@ authors:
   - name: Daniel Figat
     affiliations:
       - Poznan Supercomputing and Networking Center
+  - name: Michał Owsiak
+    affiliations:
+      - Poznan Supercomputing and Networking Center
 license: CC-BY-4.0
 exports:
   - format: pdf
