@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 containmentFOAM is an open-source package, currently available as an add-on to OpenFOAM®-11, whose modelling basis was originally tailored to the needs of containment safety analyses in nuclear power plants. This CFD code combines a high-fidelity representation of the containment thermo-fluid dynamics with a representation of safety systems (PARs, Suppression Pools, rupture foils, etc.)  at the system level. The validation basis of containmentFOAM proves its ability to model buoyancy-driven flows in multi-species gas mixtures, which motivates its application to other disciplines such as industrial hydrogen safety or the safety analysis of future fusion facilities.

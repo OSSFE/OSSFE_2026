@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Commercialization of fusion technologies—ranging from fusion power plants to fusion-powered propulsion systems—requires advanced design and engineering capabilities that tightly integrate physics, materials, and manufacturing processes. Traditionally, the complexity of design and the complexity of manufacturing have been treated separately due to the limitations of existing digital tools and the processing capability of the human mind. This disconnected approach results in sequential, and often repeated, workflows that increase costs and extend project timelines.

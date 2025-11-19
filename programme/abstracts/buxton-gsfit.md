@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Equilibrium reconstruction is foundational for all experimental interpretation in tokamaks. The core algorithm used to constrain the Grad-Shafranov equation against diagnostic measurements is well established [1], and has been used in multiple codes such as EFIT [1], EFIT++ [2], and LIUQE [3]. Despite this, an open, flexible, modular, and rigorously validated implementation remains necessary, released under a license compatible with commercial use.

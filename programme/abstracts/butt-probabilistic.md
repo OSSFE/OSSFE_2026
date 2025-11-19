@@ -37,6 +37,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Modelling an exact neutron spectrum in a neutron facility is challenging. Simulated neutron spectra may be adjusted to reflect outcomes known from validation experiments, but rigorous evaluation of uncertainties is necessary. An experimental neutron spectrum with uncertainty can then be used for the verification and validation of neutron nuclear data, testing diagnostics, and fusion mock-up experiments. Activation foils are frequently used to evaluate and unfold neutron spectra, but uncertainty quantification during evaluation is not always rigorous or transparent. The open-source nFoils Python package has been developed for the probabilistic characterisation of neutron spectra with activation foils, and the methods tested with measurements of a new compact fast neutron source at the Birmingham MC40 Cyclotron Facility. The package includes modules for calculating the activities of foils from gamma spectroscopy results, performing an efficiency calibration for a detector, extracting cross-sections and uncertainties from nuclear data libraries, and comparing experimental results to simulated results. End users can evaluate a neutron spectrum from activation foil gamma spectra by adjusting simple examples, and neutronics developers are welcome to modify the modules to suit their own needs.

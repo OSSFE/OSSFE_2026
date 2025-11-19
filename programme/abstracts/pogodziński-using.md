@@ -13,6 +13,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The EUROfusion Standard Software (ESS) initiative within the E-TASC programme defines specifications for developing and delivering robust software for fusion-related computations. To support this effort, the Advanced Computing Hub at PSNC/IPPLM provides a cohesive, multi-tenant development environment for contributors. The platform combines GitLab (source control, CI/CD, and container registry) and an automated documentation pipeline with service monitoring via Grafana, complemented by commercial wiki and issue-tracking solutions. All components are integrated through Keycloak-based single sign-on (SSO) federated with multiple identity providers (IdPs).

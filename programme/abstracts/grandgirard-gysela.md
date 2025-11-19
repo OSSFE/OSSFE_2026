@@ -49,6 +49,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Gyrokinetic simulations are essential for understanding turbulent transport in magnetized plasmas, playing a crucial role in the design and optimization of fusion devices. This presentation introduces Gysela-X++ [1] , a C++ rewrite of the original GYSELA [2] Fortran code, designed to extend its physical capabilities and enhance its portability on exascale architectures. It is built on the Kokkos performance portability framework,  ensuring efficient execution both on CPU and GPU (AMD and NVIDIA) architectures.

@@ -40,6 +40,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Fusion power plant design and integration requires tools for rapid production and 

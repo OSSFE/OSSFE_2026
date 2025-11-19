@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The Digital Replica Builder (DRB) is the first open-source component of Next Step Fusion's Modular Tokamak Design and Simulation Open Source Framework. This tool allows users to draw the tokamak geometry—including the vessel, limiter, blanket, coils, loops, probes, and other elements—and generate their digital representations. This provides a flexible and customizable starting point for tokamak design, simulation, and research.

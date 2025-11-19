@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 This presentation discusses the application of the Gkeyll open-source framework to predictive gyrokinetic turbulence modeling in fusion plasmas. While a companion tutorial introduces the Gkeyll framework in detail, this talk focuses on its capabilities for performing self-consistent, first-principles-based tokamak turbulence simulations. We demonstrate how Gkeyll enables high-fidelity modeling of the tokamak edge and scrape-off layer, moving beyond approaches that rely on empirical inputs and toward a more predictive understanding of plasma behavior.

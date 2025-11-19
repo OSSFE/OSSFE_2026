@@ -16,6 +16,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Magnetically confined nuclear fusion (MCF) is a highly multidimensional problem in both space and time. As such, modeling MCF through predictive numerical simulations has been representing one of the most challenging tasks for the numerical and high-performance computing (HPC) community for decades. 

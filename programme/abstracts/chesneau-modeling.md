@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 GenF is developing a system model of an Inertial Fusion Reactor (IFR) using CoSApp (Collaborative System Approach), an open-source Python library. CoSApp represents subsystems as modular components that can be interconnected and exchange information (inputs/outputs). This versatile library enables the design of complex systems by solving nonlinear equations imposed by the system and its subsystems. It also supports time-dependent simulations and offers standardized interfaces such as FMU/FMI.

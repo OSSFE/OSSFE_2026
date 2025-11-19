@@ -25,6 +25,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 The Integrated Modelling & Analysis Suite (IMAS) is composed of many software components developed by the ITER Organization and partners within the project. An ongoing effort aims at releasing the software in IMAS under open-source licences. The intention is to be able to reach a much wider audience and build a larger user/developer base without the administrative burden of formally agreeing access that is necessary for restricted-access closed-source software. To support new users becoming familiar with the IMAS open-source eco-system, a new set of documentation and examples have been prepared: they describe several typical use-cases (what do you want to do today?) and then dive into the installation and usage of tools and software available in IMAS to support them.

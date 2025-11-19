@@ -52,6 +52,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 As the global fusion community moves into the conceptual design phase of next-

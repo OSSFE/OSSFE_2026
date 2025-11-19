@@ -31,6 +31,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Achieving tritium self-sufficiency is a central requirement for fusion energy systems, placing tritium transport and breeding in blanket-relevant materials at the core of blanket design. The LIBRA (Liquid Immersion Blanket: Robust Accountancy) project at MIT will be the first initiative to demonstrate reproducible and scalable tritium breeding in molten salts. Its small-scale counterpart, the BABY (Build A Better Yield blanket) experiment, is providing essential benchmarks for tritium breeding and release in molten salt breeder systems under deuterium-tritium (D-T) irradiation. LIBRA is complemented by HYPERION: a permeation experiment for measuring FLiBe permeability to hydrogen isotopes (protium, deuterium) currently in operation at the MIT Plasma Science and Fusion Center (PSFC). These emerging datasets provide the foundation for validating predictive modeling tools, which, once benchmarked against experiments, can support result interpretation, guide blanket design, and identify further data needs.

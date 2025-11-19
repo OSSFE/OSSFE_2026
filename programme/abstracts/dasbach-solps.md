@@ -19,6 +19,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 Managing divertor heat fluxes is a central challenge for tokamak operation. Exhaust modeling codes such as SOLPS-ITER provide the required physical fidelity but are computationally expensive and notoriously difficult to use. To address this, we present SOLPS-NN, a software package that employs neural networks trained on a broad cross-machine SOLPS-ITER database as fast and accessible surrogate models. The package is designed for users without deep learning expertise, enabling rapid exploration of scrape-off layer dynamics.

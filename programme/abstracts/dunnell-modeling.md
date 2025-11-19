@@ -22,6 +22,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 	FESTIM 2 (1) has been newly released to include multi-isotope hydrogen transport, as well as coupling to OpenFOAM (2) and OpenMC (3) codes for thermo-hydraulics and neutronics, respectively. This work demonstrates FESTIM’s multiphysics coupling capabilities by modeling a tritium permeator probe (4), a potential measuring device for tritium concentration in liquid metals and molten salts throughout the fusion fuel cycle. The permeator probe concept relies on a vacuum probe constructed of a hydrogen-permeable membrane, which is inserted into a liquid breeder. Tritium then permeates from the liquid breeder, through the probe membrane to a gas enclosure, where a change in pressure allows us to determine the concentration of tritium in the liquid breeder. All these processes can be simulated in FESTIM. This work thus uses OpenFOAM for fluid mechanics simulations as coupled to FESTIM for tritium transport calculations. Using this study, we are able to optimize the position of the probe relative to the tested breeder to maximize tritium permeation, test the pressurization of the probe as a sensing instrument, and assess the intrusiveness of the probe as creating any change in tritium concentration downstream of the probe placement. 

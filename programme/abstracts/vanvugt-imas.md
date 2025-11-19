@@ -28,6 +28,7 @@ exports:
     template: ../../template
 site:
   hide_toc: false
+github: 'https://github.com/OSSFE/OSSFE_2026'
 ---
 
 We present our recent and upcoming developments on open-source components of a simulation environment aiming at digital-twin functionality. These range from a convenient pulse schedule and waveform editor to control and actuator simulator interfaces and examples, stateful synthetic diagnostics, simulation databases, (experimental) data analysis pipelines, experimental databases, data validation toolkits and live IMAS data visualization. We'll present how these components fit together and how they are applicable to a wide range of simulators and workflows at different fidelities.
