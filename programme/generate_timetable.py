@@ -34,7 +34,7 @@ def create_presentation_row(row: pd.Series) -> dict:
         "ID": row["Slot"],
         "Title": f"[{row['Title']}](abstracts/{filename})",
         "Presenter": f"{row['First name']} {row['Last name']}",
-        "Institution": row["Affiliation"],
+        "Organisation": row["Affiliation"],
     }
 
 
@@ -120,7 +120,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
                 time_slot=panel_slot,
                 room=panel_slot.room,
                 chair=panel_slot.chair,
-                table=pd.DataFrame(panel_data).to_markdown(index=False),
+                table=pd.DataFrame(panel_data).to_markdown(index=False, colalign=["left", "left"]),
             ),
         )
     )
@@ -172,12 +172,12 @@ def main() -> None:
     df = pd.read_csv("abstracts.csv").replace(r"\n", " ", regex=True)
 
     # Process presentation sessions
-    oral_tutorial_sessions = [
+    presentation_sessions = [
         session for ptype in ["Oral", "Tutorial"] for session in process_presentation_type(df, ptype)
     ]
 
     # Group parallel oral/tutorial sessions together
-    grouped_sessions = group_parallel_sessions(oral_tutorial_sessions)
+    grouped_sessions = group_parallel_sessions(presentation_sessions)
 
     # Collect all sessions
     all_sessions = (
