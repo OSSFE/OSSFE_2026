@@ -3,7 +3,10 @@ title: 'FreeGSNKE Pulse Design Tool: in-silico scenario design and control valid
 authors:
   - name: Kamran Pentland
     affiliations:
-      - UKAEA: Nicola C Amorisco, UKAEA
+      - UKAEA
+  - name: Nicola C Amorisco
+    affiliations:
+      - UKAEA
   - name: Alasdair Ross
     affiliations:
       - STFC Hartree Centre
