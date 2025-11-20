@@ -1,10 +1,10 @@
 ---
 title: 'FreeGSNKE Pulse Design Tool: in-silico scenario design and control validation for tokamak plasmas'
 authors:
-  - name: Nicola C Amorisco
+  - name: Kamran Pentland
     affiliations:
       - UKAEA
-  - name: Kamran Pentland
+  - name: Nicola C Amorisco
     affiliations:
       - UKAEA
   - name: Alasdair Ross
