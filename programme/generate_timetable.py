@@ -112,7 +112,10 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
 
     # Panel
     panel_slot = session_to_time("session_panel")
-    panel_data = [{"Presenter": "[TBC](bios/last_name.md)", "Affiliation": "TBC"}] * 4
+    panel_data = [
+        {"Presenter": "[Stephen Coleman](bios/coleman.md)", "Affiliation": "RadiaSoft LLC"},
+        {"Presenter": "[Zach Hynek](bios/hynek.md)", "Affiliation": "Morton Labs"},
+    ]
     sessions.append(
         (
             panel_slot,
