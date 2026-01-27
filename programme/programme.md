@@ -130,12 +130,10 @@ Room: Auditorium
 *Chair*: TBC, Affiliation
 
 A panel session will be held with the following members:
-| Presenter                | Affiliation   |
-|:-------------------------|:--------------|
-| [TBC](bios/last_name.md) | TBC           |
-| [TBC](bios/last_name.md) | TBC           |
-| [TBC](bios/last_name.md) | TBC           |
-| [TBC](bios/last_name.md) | TBC           |
+| Presenter                          | Affiliation   |
+|:-----------------------------------|:--------------|
+| [Stephen Coleman](bios/coleman.md) | RadiaSoft LLC |
+| [Zach Hynek](bios/hynek.md)        | Morton Labs   |
 
 ---
 
@@ -165,11 +163,11 @@ Room: Projektraum
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                           | &nbsp; Presenter     | &nbsp; Organisation   |
-|:------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|:----------------------|
-| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                             | Massimiliano Leoni   | Proxima Fusion        |
-| D2          | [Automatic Differentiation for CAD](abstracts/asseily-automatic.md)                                                                                                                                    | Max Asseily          | Proxima Fusion        |
-| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/giudicelli-overview.md) | Guillaume Giudicelli | INL                   |
+| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
+| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion        |
+| D2          | [Automatic Differentiation for CAD](abstracts/asseily-automatic.md)                                                                                                                                 | Max Asseily        | Proxima Fusion        |
+| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                   |
 
 
 ### 🛠️ Tutorial Session 2

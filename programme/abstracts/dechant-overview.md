@@ -1,6 +1,9 @@
 ---
 title: 'Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems'
 authors:
+  - name: Corey DeChant
+    affiliations:
+      - INL
   - name: Guillaume Giudicelli
     affiliations:
       - INL
