@@ -14,6 +14,10 @@ project:
       collapsed: true
       children:
         - pattern: programme/abstracts/*
+    - title: Panelist bios
+      collapsed: true
+      children:
+        - pattern: programme/bios/*     
   - file: sponsor.md
     hidden: true
   - file: contact.md
