@@ -45,4 +45,6 @@ site:
     url: /sponsor
   - title: Contact
     url: /contact
+  - title: Venue
+    url: /venue
   domains: []
