@@ -237,6 +237,12 @@ Number of tutorials: 2
 | T5          | [Modular Tokamak Design and Simulation Open Source Framework](abstracts/zhurba-modular.md)                                             | Alexei Zhurba      | Next Step Fusion                 |
 | T6          | [TokaLab: A Modular Virtual Tokamak Laboratory for Education, FAIR Principles, and Algorithm Benchmarking](abstracts/rossi-tokalab.md) | Riccardo Rossi     | "Tor Vergata" University of Rome |
 
+
+
+### 🍻 Welcome drinks and networking: 17:00 - 19:00
+
+Oppertunity networking over beers and light snacks in the Urban Colab
+
 ---
 
 
