@@ -22,6 +22,8 @@ project:
     hidden: true
   - file: contact.md
     hidden: true
+  - file: venue.md
+    hidden: true
   # title: OSSFE
   # keywords: []
   # authors: []
