@@ -115,6 +115,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     panel_data = [
         {"Presenter": "[Stephen Coleman](bios/coleman.md)", "Affiliation": "RadiaSoft LLC"},
         {"Presenter": "[Zach Hynek](bios/hynek.md)", "Affiliation": "Morton Labs"},
+        {"Presenter": "[Baptiste Mouginot](bios/mouginot.md)", "Affiliation": "Freelancer"}
     ]
     sessions.append(
         (
