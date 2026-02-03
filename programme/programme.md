@@ -130,10 +130,11 @@ Room: Auditorium
 *Chair*: TBC, Affiliation
 
 A panel session will be held with the following members:
-| Presenter                          | Affiliation   |
-|:-----------------------------------|:--------------|
-| [Stephen Coleman](bios/coleman.md) | RadiaSoft LLC |
-| [Zach Hynek](bios/hynek.md)        | Morton Labs   |
+| Presenter                             | Affiliation               |
+|:--------------------------------------|:--------------------------|
+| [Stephen Coleman](bios/coleman.md)    | RadiaSoft LLC             |
+| [Zach Hynek](bios/hynek.md)           | Morton Labs               |
+| [Baptiste Mouginot](bios/mouginot.md) | BaM Scientific Consulting |
 
 ---
 
@@ -454,7 +455,7 @@ Presenter: Remi Delaporte-Mathurin
 ---
 
 
-# Thursday 
+# Thursday
 ## 🚶 Proxima Fusion tour: 09:30 - 10:00
 
 |  |  |
@@ -475,7 +476,7 @@ Coffee, tea refreshments and pastries will be served in the Foyer.
 
 ## 🖳 OSSFE Hackathon: 10:20 - 12:20
 
-An optional add-on event for conference attendees. 
+An optional add-on event for conference attendees.
 This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
 contiribution process first-hand.
 
