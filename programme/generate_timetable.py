@@ -115,7 +115,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     panel_data = [
         {"Presenter": "[Stephen Coleman](bios/coleman.md)", "Affiliation": "RadiaSoft LLC"},
         {"Presenter": "[Zach Hynek](bios/hynek.md)", "Affiliation": "Morton Labs"},
-        {"Presenter": "[Baptiste Mouginot](bios/mouginot.md)", "Affiliation": "Freelancer"}
+        {"Presenter": "[Baptiste Mouginot](bios/mouginot.md)", "Affiliation": "Freelancer"},
     ]
     sessions.append(
         (
@@ -128,6 +128,10 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
             ),
         )
     )
+
+    # Welcome drinks
+    slot_welcome_drinks = session_to_time("session_welcome_drinks")
+    sessions.append((slot_welcome_drinks, templates.welcome_drinks_template.format(time_slot=slot_welcome_drinks)))
 
     # Proxima tour and hackathon
     slot_tour = session_to_time("session_proxima_tour")

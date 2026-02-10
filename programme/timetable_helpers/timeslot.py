@@ -92,6 +92,11 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
         "start": (2026, 3, 12, 12, 20),
         "end": (2026, 3, 12, 13, 40),
     },
+    "session_welcome_drinks": {
+        "start": (2026, 3, 10, 17, 10),
+        "end": (2026, 3, 10, 18, 30),
+        "room": "Foyer",
+    },
     # Poster sessions
     "session_poster_1": {
         "start": (2026, 3, 10, 11, 20),
