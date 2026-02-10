@@ -1,5 +1,5 @@
 ---
-title: 'Steven Coleman'
+title: 'Stephen Coleman'
 # image: '../assets/stephen_coleman.jpg'
 license: CC-BY-4.0
 site:
