@@ -214,3 +214,13 @@ contiribution process first-hand.
 ---
 """
 )
+
+welcome_drinks_template = dedent(
+    """\
+## 🍻 Welcome drinks and networking: {time_slot}
+
+An oppertunity for networking over complementary beers and light snacks in the Urban Colab foyer.
+
+---
+"""
+)
