@@ -242,6 +242,13 @@ Number of tutorials: 2
 ---
 
 
+## 🍻 Welcome drinks and networking: 17:10 - 18:30
+
+An oppertunity for networking over complementary beers and light snacks in the Urban Colab foyer.
+
+---
+
+
 # Wednesday
 ## Plenary Session 2: 09:00 - 10:00
 
