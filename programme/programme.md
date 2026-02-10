@@ -130,11 +130,11 @@ Room: Auditorium
 *Chair*: TBC, Affiliation
 
 A panel session will be held with the following members:
-| Presenter                             | Affiliation               |
-|:--------------------------------------|:--------------------------|
-| [Stephen Coleman](bios/coleman.md)    | RadiaSoft LLC             |
-| [Zach Hynek](bios/hynek.md)           | Morton Labs               |
-| [Baptiste Mouginot](bios/mouginot.md) | BaM Scientific Consulting |
+| Presenter                             | Affiliation   |
+|:--------------------------------------|:--------------|
+| [Stephen Coleman](bios/coleman.md)    | RadiaSoft LLC |
+| [Zach Hynek](bios/hynek.md)           | Morton Labs   |
+| [Baptiste Mouginot](bios/mouginot.md) | Freelancer    |
 
 ---
 
@@ -164,11 +164,11 @@ Room: Projektraum
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
-|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
-| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion        |
-| D2          | [Automatic Differentiation for CAD](abstracts/asseily-automatic.md)                                                                                                                                 | Max Asseily        | Proxima Fusion        |
-| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                   |
+| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation         |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------------|
+| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion              |
+| D2          | [TRICYS: An Open-Source Architecture for Tool-Coupled Tritium Fuel Cycle Simulation](abstracts/zhang-tricys.md)                                                                                     | Xiaokang Zhang     | Chinese Academy of Sciences |
+| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                         |
 
 
 ### 🛠️ Tutorial Session 2
@@ -179,9 +179,10 @@ A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: 2
 
-| &nbsp; ID   | &nbsp; Title                                                                                | &nbsp; Presenter   | &nbsp; Organisation   |
-|:------------|:--------------------------------------------------------------------------------------------|:-------------------|:----------------------|
-| T3          | [Getting started with IMAS open-source: a beginner’s tutorial](abstracts/hoenen-getting.md) | Olivier Hoenen     | ITER Organization     |
+| &nbsp; ID   | &nbsp; Title                                                                                | &nbsp; Presenter   | &nbsp; Organisation         |
+|:------------|:--------------------------------------------------------------------------------------------|:-------------------|:----------------------------|
+| T3          | [Getting started with IMAS open-source: a beginner’s tutorial](abstracts/hoenen-getting.md) | Olivier Hoenen     | ITER Organization           |
+| T4          | [A Snapshot of Fusion Neutronics with OpenMC](abstracts/shriwise-a.md)                      | Patrick Shriwise   | Argonne National Laboratory |
 
 ---
 
@@ -455,7 +456,7 @@ Presenter: Remi Delaporte-Mathurin
 ---
 
 
-# Thursday
+# Thursday 
 ## 🚶 Proxima Fusion tour: 09:30 - 10:00
 
 |  |  |
@@ -476,7 +477,7 @@ Coffee, tea refreshments and pastries will be served in the Foyer.
 
 ## 🖳 OSSFE Hackathon: 10:20 - 12:20
 
-An optional add-on event for conference attendees.
+An optional add-on event for conference attendees. 
 This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
 contiribution process first-hand.
 
