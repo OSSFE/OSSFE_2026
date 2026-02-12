@@ -4,7 +4,7 @@ authors:
   - name: Eugenia Dlougach
     affiliations:
       - Neutral Beam Research
-  - name: Fedor Kyanov
+  - name: Fedor Kuyanov
     affiliations:
       - University of Oxford
 license: CC-BY-4.0
