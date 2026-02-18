@@ -3,7 +3,7 @@ title: 'Simulation of MHD plasma equilibria and evolutions by APEC-M code'
 authors:
   - name: Alberto Bittesnich
     affiliations:
-      - Fusion for energy
+      - ATG Science & Engineering
   - name: Pietro Testoni
     affiliations:
       - Fusion for Energy
