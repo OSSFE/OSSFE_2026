@@ -28,7 +28,10 @@ github: 'https://github.com/OSSFE/OSSFE_2026'
 Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
 ---
-# Tuesday
+# Tuesday 10th
+
+📅 [View the Tuesday timetable](https://drive.google.com/file/d/1m1ygJT4g3T-sKjTWR0mGjlNNTa_11LgQ/view?usp=drive_link)
+
 ## 🎉 Welcome statement: 08:40 - 09:00
 
 Room: Auditorium
@@ -239,7 +242,10 @@ An oppertunity for networking over complementary beers and light snacks in the U
 ---
 
 
-# Wednesday
+# Wednesday 11th
+
+📅 [View the Wednesday timetable](https://drive.google.com/file/d/1HnbM-1yhW13wV3gZC3-9HycwaNCNm4hi/view?usp=drive_link)
+
 ## Plenary Session 2: 09:00 - 10:00
 
 Room: Auditorium
@@ -457,39 +463,4 @@ Presenter: Remi Delaporte-Mathurin
 ---
 
 
-# Thursday 
-## 🚶 Proxima Fusion tour: 09:30 - 10:00
-
-|  |  |
-|---|---|
-| ![](../assets/proxima_image.png) | ![](../assets/proxima_facilty.png) |
-
-Join us for an optional social event and get a behind-the-scenes look at Proxima Fusion's facilities.
-
----
-
-
-## ☕ Break: 10:00 - 10:20
-
-Coffee, tea refreshments and pastries will be served in the Foyer.
-
----
-
-
-## 🖳 OSSFE Hackathon: 10:20 - 12:20
-
-An optional add-on event for conference attendees. 
-This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
-contiribution process first-hand.
-
-*Structure and details to be announced*
-
----
-
-
-## 🍽️ Lunch break: 12:20 - 13:40
-
-Lunch is provided in the Proxima Fusion office for all Hackathon attendees.
-
----
-
+# Thursday 12th

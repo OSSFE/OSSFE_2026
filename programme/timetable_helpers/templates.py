@@ -32,14 +32,19 @@ github: 'https://github.com/OSSFE/OSSFE_2026'
 Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
 ---
-# Tuesday
+# Tuesday 10th
+
+📅 [View the Tuesday timetable](https://drive.google.com/file/d/1m1ygJT4g3T-sKjTWR0mGjlNNTa_11LgQ/view?usp=drive_link)
+
 {tables_day_1}
 
-# Wednesday
+# Wednesday 11th
+
+📅 [View the Wednesday timetable](https://drive.google.com/file/d/1HnbM-1yhW13wV3gZC3-9HycwaNCNm4hi/view?usp=drive_link)
+
 {tables_day_2}
 
-# Thursday 
-{tables_day_3}
+# Thursday 12th
 """
 )
 
