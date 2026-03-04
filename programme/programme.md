@@ -86,11 +86,9 @@ Room: Projektraum
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                          | &nbsp; Presenter    | &nbsp; Organisation                  |
-|:------------|:------------------------------------------------------------------------------------------------------|:--------------------|:-------------------------------------|
-| B1          | [The IAEA Fusion Data Lake Project - Progress, Prototype, and the Path Ahead](abstracts/gahle-the.md) | Daljeet Singh Gahle | International Atomic Energy Agency   |
-| B2          | [A comparison of open source data distribution tools for global data sharing](abstracts/dixon-a.md)   | Stephen Dixon       | UKAEA                                |
-| B3          | [Open-source MDSplus and Trends in Fusion Data](abstracts/stillerman-open.md)                         | Joshua Stillerman   | MIT Plasma Science and Fusion Center |
+| &nbsp; ID   | &nbsp; Title                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
+|:------------|:----------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
+| B2          | [A comparison of open source data distribution tools for global data sharing](abstracts/dixon-a.md) | Stephen Dixon      | UKAEA                 |
 
 
 ### 🛠️ Tutorial Session 1
@@ -149,11 +147,11 @@ Room: Auditorium
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                   | &nbsp; Presenter   | &nbsp; Organisation   |
-|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
-| C1          | [Constraining Equilibria with Toroidal Harmonics in the Bluemira Design Framework](abstracts/mould-constraining.md)                            | Clair Mould        | UKAEA                 |
-| C2          | [Exploring fusion power plant trade-offs with FUSE: An open-source multi-objective optimization framework](abstracts/slendebroek-exploring.md) | Tim Slendebroek    | UCSD                  |
-| C3          | [FUSE Integrated Modeling Framework for FPP design, Scenario Optimization and Model Validation](abstracts/neiser-fuse.md)                      | Tom Neiser         | General Atomics       |
+| &nbsp; ID   | &nbsp; Title                                                                                                                              | &nbsp; Presenter   | &nbsp; Organisation   |
+|:------------|:------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
+| C1          | [Constraining Equilibria with Toroidal Harmonics in the Bluemira Design Framework](abstracts/mould-constraining.md)                       | Clair Mould        | UKAEA                 |
+| C2          | [Exploring fusion power plant trade-offs with FUSE: An open-source multi-objective optimization framework](abstracts/neiser-exploring.md) | Tom Neiser         | General Atomics       |
+| C3          | [FUSE Integrated Modeling Framework for FPP design, Scenario Optimization and Model Validation](abstracts/neiser-fuse.md)                 | Tom Neiser         | General Atomics       |
 
 
 ### Oral Session D
@@ -164,11 +162,10 @@ Room: Projektraum
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation         |
-|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------------|
-| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion              |
-| D2          | [TRICYS: An Open-Source Architecture for Tool-Coupled Tritium Fuel Cycle Simulation](abstracts/zhang-tricys.md)                                                                                     | Xiaokang Zhang     | Chinese Academy of Sciences |
-| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                         |
+| &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
+| D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion        |
+| D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                   |
 
 
 ### 🛠️ Tutorial Session 2
@@ -204,11 +201,11 @@ Room: Auditorium
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                                    | &nbsp; Presenter   | &nbsp; Organisation               |
-|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------------------|
-| E1          | [Modeling Permeator Probe for Tritium Concentration in Liquids](abstracts/dunnell-modeling.md)                                                                  | Kaelyn Dunnell     | MIT PSFC                          |
-| E2          | [Toward ParaTAN–FESTIM Coupling: An MBSE-Oriented Open-Source Workflow for Neutronics and Tritium Transport in Mirror Fusion Devices](abstracts/shah-toward.md) | Hitarth Shah       | University of Wisconsin - Madison |
-| E3          | [Uncertainty Quantification Tools for Lithium Ceramics-based Tritium Breeding Module](abstracts/yudin-uncertainty.md)                                           | Yehor Yudin        | Bangor University                 |
+| &nbsp; ID   | &nbsp; Title                                                                                                              | &nbsp; Presenter   | &nbsp; Organisation   |
+|:------------|:--------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
+| E1          | [Modeling Permeator Probe for Tritium Concentration in Liquids](abstracts/dunnell-modeling.md)                            | Kaelyn Dunnell     | MIT PSFC              |
+| E2          | [Modeling an Inertial Fusion Reactor system using CoSApp, an open-source Python library.](abstracts/chesneau-modeling.md) | Hugo Chesneau      | GenF                  |
+| E3          | [Uncertainty Quantification Tools for Lithium Ceramics-based Tritium Breeding Module](abstracts/yudin-uncertainty.md)     | Yehor Yudin        | Bangor University     |
 
 
 ### Oral Session F
@@ -221,7 +218,7 @@ Number of presentations: 3
 
 | &nbsp; ID   | &nbsp; Title                                                                                                                           | &nbsp; Presenter   | &nbsp; Organisation   |
 |:------------|:---------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
-| F1          | [DESC Stellarator Equilibrium and Optimization Code](abstracts/kadz-desc.md)                                                           | Lee Kadz           | Princeton University  |
+| F1          | [Pydantic on Steroids – Managing Reproducible Simulation Data at Scale](abstracts/bonauer-pydantic.md)                                 | Lukas Bonauer      | Proxima Fusion        |
 | F2          | [ConStellaration: A dataset of QI-like stellarator plasma boundaries and optimization benchmarks](abstracts/cadena-constellaration.md) | Santiago Cadena    | Proxima Fusion        |
 | F3          | [Simsopt: A flexible framework for stellarator optimisation](abstracts/smiet-simsopt.md)                                               | Chris Smiet        | EPFL                  |
 
@@ -283,11 +280,10 @@ Room: Auditorium
 
 Number of presentations: 3
 
-| &nbsp; ID   | &nbsp; Title                                                                                                                                  | &nbsp; Presenter             | &nbsp; Organisation     |
-|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|:------------------------|
-| G1          | [Deep Learning–Based Surrogate Models and RL Control for Extreme Vacuum Environments in Fusion Research](abstracts/rodríguezllorente-deep.md) | Guillermo Rodríguez Llorente | HI Iberia               |
-| G2          | [Pellet Fueling: AI-Enhanced Surrogate Model HPI2-NN and Integrated Modelling](abstracts/paneraalvarez-pellet.md)                             | Alex Panera Alvarez          | DIFFER                  |
-| G3          | [An ML-based design approach for Fusion Energy components](abstracts/perumal-an.md)                                                           | Vignesh Perumal              | UHV3D, Inc. dba CAMINNO |
+| &nbsp; ID   | &nbsp; Title                                                                                                                                  | &nbsp; Presenter             | &nbsp; Organisation   |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|:----------------------|
+| G1          | [Deep Learning–Based Surrogate Models and RL Control for Extreme Vacuum Environments in Fusion Research](abstracts/rodríguezllorente-deep.md) | Guillermo Rodríguez Llorente | HI Iberia             |
+| G2          | [Pellet Fueling: AI-Enhanced Surrogate Model HPI2-NN and Integrated Modelling](abstracts/paneraalvarez-pellet.md)                             | Alex Panera Alvarez          | DIFFER                |
 
 
 ### Oral Session H
@@ -363,7 +359,6 @@ Number of presentations: 3
 
 | &nbsp; ID   | &nbsp; Title                                                                                                             | &nbsp; Presenter   | &nbsp; Organisation                 |
 |:------------|:-------------------------------------------------------------------------------------------------------------------------|:-------------------|:------------------------------------|
-| I1          | [An Open-Source Divertor Digital Twin Environment for Fusion Power Plants](abstracts/battye-an.md)                       | Michael Battye     | University of York                  |
 | I2          | [Using Gkeyll as a self-consistent gyrokinetic predictive tool for tokamak edge turbulence](abstracts/hoffmann-using.md) | Antoine Hoffmann   | Princeton Plasma Physics Laboratory |
 | I3          | [GSFit: Grad-Shafranov Fit – A new equilibrium reconstruction code for tokamak plasmas](abstracts/buxton-gsfit.md)       | Peter Buxton       | Tokamak Energy Ltd.                 |
 
