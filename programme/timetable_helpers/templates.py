@@ -49,6 +49,8 @@ Here you will find the schedule and abstracts for the OSSFE 2026 conference
 {tables_day_2}
 
 # Thursday 12th
+
+{tables_day_3}
 """
 )
 
@@ -197,26 +199,16 @@ Lunch is provided in the Proxima Fusion office for all Hackathon attendees.
 """
 )
 
-proxima_tour = dedent(
+hackathon = dedent(
     """\
-## 🚶 Proxima Fusion tour: {time_slot}
+## 🖳 OSSFE Hackathon: {time_slot}
+
+An optional add-on event for conference attendees to be held at the [Proxima Fusion](https://www.proximafusion.com/) head offices. 
 
 |  |  |
 |---|---|
 | ![](../assets/proxima_image.png) | ![](../assets/proxima_facilty.png) |
 
-Join us for an optional social event and get a behind-the-scenes look at Proxima Fusion's facilities.
-
----
-"""
-)
-
-
-hackathon = dedent(
-    """\
-## 🖳 OSSFE Hackathon: {time_slot}
-
-An optional add-on event for conference attendees. 
 This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
 contiribution process first-hand.
 
