@@ -135,10 +135,7 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     slot_welcome_drinks = session_to_time("session_welcome_drinks")
     sessions.append((slot_welcome_drinks, templates.welcome_drinks_template.format(time_slot=slot_welcome_drinks)))
 
-    # Proxima tour and hackathon
-    slot_tour = session_to_time("session_proxima_tour")
-    sessions.append((slot_tour, templates.proxima_tour.format(time_slot=slot_tour)))
-
+    # Proxima hackathon
     slot_hackathon = session_to_time("session_hackathon")
     sessions.append((slot_hackathon, templates.hackathon.format(time_slot=slot_hackathon)))
 
