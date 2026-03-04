@@ -36,11 +36,15 @@ Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
 📅 [View the Tuesday timetable](https://drive.google.com/file/d/1m1ygJT4g3T-sKjTWR0mGjlNNTa_11LgQ/view?usp=drive_link)
 
+---
+
 {tables_day_1}
 
 # Wednesday 11th
 
 📅 [View the Wednesday timetable](https://drive.google.com/file/d/1HnbM-1yhW13wV3gZC3-9HycwaNCNm4hi/view?usp=drive_link)
+
+---
 
 {tables_day_2}
 
@@ -227,6 +231,18 @@ welcome_drinks_template = dedent(
 ## 🍻 Welcome drinks and networking: {time_slot}
 
 An oppertunity for networking over complementary beers and light snacks in the Urban Colab foyer.
+
+---
+"""
+)
+
+registration_template = dedent(
+    """\
+## 📝 Registration: {time_slot}
+
+Room: {room}
+
+Make sure to stop by the registration desk in the Projektraum to check in and pick up your conference materials.
 
 ---
 """

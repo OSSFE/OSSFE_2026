@@ -145,6 +145,11 @@ def create_special_sessions() -> List[Tuple[TimeSlot, str]]:
     slot_lunch_proxima = session_to_time("session_lunch_proxima")
     sessions.append((slot_lunch_proxima, templates.lunch_proxima.format(time_slot=slot_lunch_proxima)))
 
+    slot_registration = session_to_time("session_registration")
+    sessions.append(
+        (slot_registration, templates.registration_template.format(time_slot=slot_registration, room=panel_slot.room))
+    )
+
     return sessions
 
 
