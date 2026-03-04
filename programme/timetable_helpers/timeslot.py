@@ -78,7 +78,7 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
         "start": (2026, 3, 10, 13, 40),
         "end": (2026, 3, 10, 14, 40),
         "room": "Auditorium",
-        "chair": "TBC, Affiliation",
+        "chair": "Patrick Shriwise, Argonne National Laboratory",
     },
     "session_proxima_tour": {
         "start": (2026, 3, 12, 9, 30),
@@ -115,13 +115,13 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
             "end": end,
             "room": "Auditorium",
             "type": "Plenary",
-            "chair": "TBC, Affiliation",
+            "chair": chair,
         }
-        for i, (start, end) in enumerate(
+        for i, (start, end, chair) in enumerate(
             [
-                ((2026, 3, 10, 9, 0), (2026, 3, 10, 10, 0)),
-                ((2026, 3, 11, 9, 0), (2026, 3, 10, 10, 0)),
-                ((2026, 3, 11, 13, 40), (2026, 3, 10, 14, 40)),
+                ((2026, 3, 10, 9, 0), (2026, 3, 10, 10, 0), "Remi Delaporte-Mathurin, MIT"),
+                ((2026, 3, 11, 9, 0), (2026, 3, 10, 10, 0), "James Dark, MIT"),
+                ((2026, 3, 11, 13, 40), (2026, 3, 10, 14, 40), "Nathan Cummings, UK Atomic Energy Authority"),
             ],
             start=1,
         )
@@ -133,16 +133,20 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
             "end": end,
             "room": "Seminar room 1",
             "type": "Tutorial",
-            "chair": "TBC, Affiliation",
+            "chair": chair,
         }
-        for i, (start, end) in enumerate(
+        for i, (start, end, chair) in enumerate(
             [
-                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20)),
-                ((2026, 3, 10, 14, 40), (2026, 3, 10, 15, 40)),
-                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0)),
-                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20)),
-                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40)),
-                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0)),
+                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20), "Daan van Vugt, Ignition Computing"),
+                (
+                    (2026, 3, 10, 14, 40),
+                    (2026, 3, 10, 15, 40),
+                    "Stefan Possanner, Max Planck Institute for Plasma Physics",
+                ),
+                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0), "Matti Coleman, UKAEA"),
+                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20), "Antoine Hoffmann, Princeton Plasma Physics Laboratory"),
+                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Massimiliano Leoni, Proxima Fusion"),
+                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Matthew Field, United Kingdom Atomic Energy Authority"),
             ],
             start=1,
         )
@@ -154,23 +158,23 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
             "end": end,
             "room": room,
             "type": "Oral",
-            "chair": "TBC, Affiliation",
+            "chair": chair,
         }
-        for letter, (start, end, room) in zip(
+        for letter, (start, end, room, chair) in zip(
             "ABCDEFGHIJKL",
             [
-                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20), "Auditorium"),
-                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20), "Projektraum"),
-                ((2026, 3, 10, 14, 40), (2026, 3, 10, 15, 40), "Auditorium"),
-                ((2026, 3, 10, 14, 40), (2026, 3, 10, 15, 40), "Projektraum"),
-                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0), "Auditorium"),
-                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0), "Projektraum"),
-                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20), "Auditorium"),
-                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20), "Projektraum"),
-                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Auditorium"),
-                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Projektraum"),
-                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Auditorium"),
-                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Projektraum"),
+                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20), "Auditorium", "Chris Smiet, EPFL"),
+                ((2026, 3, 10, 10, 20), (2026, 3, 10, 11, 20), "Projektraum", "TBC, Affiliation"),
+                ((2026, 3, 10, 14, 40), (2026, 3, 10, 15, 40), "Auditorium", "Jonathan Hollocombe, UKAEA"),
+                ((2026, 3, 10, 14, 40), (2026, 3, 10, 15, 40), "Projektraum", "Adam Urbańczyk, CadQuery"),
+                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0), "Auditorium", "Stephen Coleman, RadiaSoft LLC"),
+                ((2026, 3, 10, 16, 0), (2026, 3, 10, 17, 0), "Projektraum", "Christopher Ashe, UKIFS"),
+                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20), "Auditorium", "TBC, Affiliation"),
+                ((2026, 3, 11, 10, 20), (2026, 3, 11, 11, 20), "Projektraum", "Jonathan Shimwell, Proxima Fusion"),
+                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Auditorium", "Andrew Davis, UKAEA"),
+                ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Projektraum", "Yehor Yudin, Bangor University"),
+                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Auditorium", "Olivier Hoenen, ITER Organization"),
+                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Projektraum", "TBC, Affiliation"),
             ],
         )
     },

@@ -42,7 +42,7 @@ Presenter: Remi Delaporte-Mathurin
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Remi Delaporte-Mathurin, MIT
 
 Number of presentations: 2
 
@@ -67,7 +67,7 @@ Coffee, tea refreshments and pastries will be served in the Foyer.
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Chris Smiet, EPFL
 
 Number of presentations: 3
 
@@ -130,7 +130,7 @@ A panel session will be held with the following members:
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Jonathan Hollocombe, UKAEA
 
 Number of presentations: 3
 
@@ -145,7 +145,7 @@ Number of presentations: 3
 
 Room: Projektraum
 
-*Chair*: TBC, Affiliation
+*Chair*: Adam Urbańczyk, CadQuery
 
 Number of presentations: 3
 
@@ -185,7 +185,7 @@ Coffee, tea refreshments and pastries will be served in the Foyer.
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Stephen Coleman, RadiaSoft LLC
 
 Number of presentations: 3
 
@@ -200,7 +200,7 @@ Number of presentations: 3
 
 Room: Projektraum
 
-*Chair*: TBC, Affiliation
+*Chair*: Christopher Ashe, UKIFS
 
 Number of presentations: 3
 
@@ -239,7 +239,7 @@ An oppertunity for networking over complementary beers and light snacks in the U
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: James Dark, MIT
 
 Number of presentations: -46
 
@@ -278,7 +278,7 @@ Number of presentations: 3
 
 Room: Projektraum
 
-*Chair*: TBC, Affiliation
+*Chair*: Jonathan Shimwell, Proxima Fusion
 
 Number of presentations: 3
 
@@ -323,7 +323,7 @@ Lunch is provided in the Munich Urban Colab restaurant (ground floor) for all co
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Nathan Cummings, UK Atomic Energy Authority
 
 Number of presentations: -46
 
@@ -341,7 +341,7 @@ Number of presentations: -46
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Andrew Davis, UKAEA
 
 Number of presentations: 3
 
@@ -355,7 +355,7 @@ Number of presentations: 3
 
 Room: Projektraum
 
-*Chair*: TBC, Affiliation
+*Chair*: Yehor Yudin, Bangor University
 
 Number of presentations: 3
 
@@ -395,7 +395,7 @@ Coffee, tea refreshments and pastries will be served in the Foyer.
 
 Room: Auditorium
 
-*Chair*: TBC, Affiliation
+*Chair*: Olivier Hoenen, ITER Organization
 
 Number of presentations: 3
 
