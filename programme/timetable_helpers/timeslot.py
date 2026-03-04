@@ -80,12 +80,8 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
         "room": "Auditorium",
         "chair": "Patrick Shriwise, Argonne National Laboratory",
     },
-    "session_proxima_tour": {
-        "start": (2026, 3, 12, 9, 30),
-        "end": (2026, 3, 12, 10, 0),
-    },
     "session_hackathon": {
-        "start": (2026, 3, 12, 10, 20),
+        "start": (2026, 3, 12, 9, 30),
         "end": (2026, 3, 12, 12, 20),
     },
     "session_lunch_proxima": {
@@ -191,7 +187,6 @@ BREAKS: List[tuple] = [
     ((2026, 3, 10, 15, 40), (2026, 3, 10, 16, 0)),
     ((2026, 3, 11, 10, 0), (2026, 3, 11, 10, 20)),
     ((2026, 3, 11, 15, 40), (2026, 3, 11, 16, 0)),
-    ((2026, 3, 12, 10, 0), (2026, 3, 12, 10, 20)),
 ]
 
 # Lunches schedule
