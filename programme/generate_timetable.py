@@ -31,17 +31,19 @@ def create_presentation_row(row: pd.Series) -> dict:
     """Create a single presentation data row."""
     filename = generate_filename(row["Last name"], row["Title"])
     return {
-        "&nbsp; ID": row["Slot"],
-        "&nbsp; Title": f"[{row['Title']}](abstracts/{filename})",
-        "&nbsp; Presenter": f"{row['First name']} {row['Last name']}",
-        "&nbsp; Organisation": row["Affiliation"],
+        "ID": row["Slot"],
+        "Title": f"[{row['Title']}](abstracts/{filename})",
+        "Presenter": f"{row['First name']} {row['Last name']}",
+        "Organisation": row["Affiliation"],
     }
 
 
 def process_session_group(session_id: str, group: pd.DataFrame, template: str, prefix: str) -> Tuple[TimeSlot, str]:
     """Process a session group into formatted markdown."""
     time_slot = session_to_time(session_id)
-    table = pd.DataFrame([create_presentation_row(row) for _, row in group.iterrows()]).to_markdown(index=False)
+    table = pd.DataFrame([create_presentation_row(row) for _, row in group.iterrows()]).to_markdown(
+        index=False, colalign=["left", "left", "left", "left"]
+    )
 
     return (
         time_slot,
@@ -152,15 +154,15 @@ def create_poster_table(df: pd.DataFrame, session_id: str) -> str:
 
     data = [
         {
-            "&nbsp; ID": str(row["Abstract ID"]),
-            "&nbsp; Title": f"[{row['Title']}](abstracts/{generate_filename(row['Last name'], row['Title'])})",
-            "&nbsp; Presenter": f"{row['First name']} {row['Last name']}",
-            "&nbsp; Affiliation": row["Affiliation"],
+            "ID": str(row["Abstract ID"]),
+            "Title": f"[{row['Title']}](abstracts/{generate_filename(row['Last name'], row['Title'])})",
+            "Presenter": f"{row['First name']} {row['Last name']}",
+            "Affiliation": row["Affiliation"],
         }
         for _, row in filtered.iterrows()
     ]
 
-    return pd.DataFrame(data).to_markdown(index=False)
+    return pd.DataFrame(data).to_markdown(index=False, colalign=["left", "left", "left", "left"])
 
 
 def organize_by_day(sessions: List[Tuple[TimeSlot, str]]) -> Tuple[Dict[str, List[str]], Dict[str, TimeSlot]]:
