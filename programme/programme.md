@@ -477,3 +477,26 @@ Presenter: Remi Delaporte-Mathurin
 
 
 # Thursday 12th
+
+## 🖳 OSSFE Hackathon: 09:30 - 12:20
+
+An optional add-on event for conference attendees to be held at the [Proxima Fusion](https://www.proximafusion.com/) head offices. 
+
+|  |  |
+|---|---|
+| ![](../assets/proxima_image.png) | ![](../assets/proxima_facilty.png) |
+
+This will be an oppertunity to interact work together with open-source developers on projects of interest and see the
+contiribution process first-hand.
+
+*Structure and details to be announced*
+
+---
+
+
+## 🍽️ Lunch break: 12:20 - 13:40
+
+Lunch is provided in the Proxima Fusion office for all Hackathon attendees.
+
+---
+
