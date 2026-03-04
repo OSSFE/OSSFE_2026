@@ -82,6 +82,8 @@ Number of presentations: 3
 
 Room: Seminar room 1
 
+*Chair*: Daan van Vugt, Ignition Computing
+
 A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: 2
@@ -160,6 +162,8 @@ Number of presentations: 3
 
 Room: Seminar room 1
 
+*Chair*: Stefan Possanner, Max Planck Institute for Plasma Physics
+
 A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: 2
@@ -214,6 +218,8 @@ Number of presentations: 3
 ### 🛠️ Tutorial Session 3
 
 Room: Seminar room 1
+
+*Chair*: Matti Coleman, UKAEA
 
 A series of tutorials will be available to attend for the following packages:
 
@@ -293,6 +299,8 @@ Number of presentations: 3
 
 Room: Seminar room 1
 
+*Chair*: Antoine Hoffmann, Princeton Plasma Physics Laboratory
+
 A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: 2
@@ -370,6 +378,8 @@ Number of presentations: 3
 
 Room: Seminar room 1
 
+*Chair*: Massimiliano Leoni, Proxima Fusion
+
 A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: 2
@@ -424,6 +434,8 @@ Number of presentations: 3
 ### 🛠️ Tutorial Session 6
 
 Room: Seminar room 1
+
+*Chair*: Matthew Field, United Kingdom Atomic Energy Authority
 
 A series of tutorials will be available to attend for the following packages:
 

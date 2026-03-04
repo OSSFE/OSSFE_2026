@@ -131,6 +131,8 @@ tutorial_session = dedent(
 
 Room: {room}
 
+*Chair*: {chair}
+
 A series of tutorials will be available to attend for the following packages:
 
 Number of tutorials: {num_presentations}
