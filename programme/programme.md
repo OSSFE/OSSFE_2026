@@ -78,19 +78,6 @@ Number of presentations: 3
 | A3          | [Summary of V&V efforts for OpenMC](abstracts/shimwell-summary.md)                                                           | Jonathan Shimwell  | Proxima Fusion                       |
 
 
-### Oral Session B
-
-Room: Projektraum
-
-*Chair*: TBC, Affiliation
-
-Number of presentations: 3
-
-| &nbsp; ID   | &nbsp; Title                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
-|:------------|:----------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
-| B2          | [A comparison of open source data distribution tools for global data sharing](abstracts/dixon-a.md) | Stephen Dixon      | UKAEA                 |
-
-
 ### 🛠️ Tutorial Session 1
 
 Room: Seminar room 1
@@ -165,6 +152,7 @@ Number of presentations: 3
 | &nbsp; ID   | &nbsp; Title                                                                                                                                                                                        | &nbsp; Presenter   | &nbsp; Organisation   |
 |:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------------|
 | D1          | [The FEniCS Finite Element framework: introduction and applications in nuclear fusion simulations](abstracts/leoni-the.md)                                                                          | Massimiliano Leoni | Proxima Fusion        |
+| D2          | [A comparison of open source data distribution tools for global data sharing](abstracts/dixon-a.md)                                                                                                 | Stephen Dixon      | UKAEA                 |
 | D3          | [Overview of the capabilities in the Multiphysics Object Oriented Simulation Environment and recent activities in modeling and simulation for fusion energy systems](abstracts/dechant-overview.md) | Corey DeChant      | INL                   |
 
 
