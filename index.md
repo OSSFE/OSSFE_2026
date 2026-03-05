@@ -16,8 +16,10 @@ The **Open Source Software for Fusion Energy (OSSFE) Conference** is a first-of-
 
 # Sponsored by
 
-![morton logo](assets/morton-labs.webp)
-![proxima logo](assets/Logo_Proxima_Fusion.svg)
+<div style="display: flex; gap: 2rem; align-items: center;">
+  <img src="assets/morton-labs.webp" alt="morton logo" style="flex: 6; max-width: 60%; height: auto;" />
+  <img src="assets/Logo_Proxima_Fusion.svg" alt="proxima logo" style="flex: 4; max-width: 40%; height: auto;" />
+</div>
 
 Details on registration can be found on the [registration](registration.md) page.
 
