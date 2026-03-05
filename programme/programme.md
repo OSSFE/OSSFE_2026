@@ -27,10 +27,10 @@ github: 'https://github.com/OSSFE/OSSFE_2026'
 
 Here you will find the schedule and abstracts for the OSSFE 2026 conference
 
+<a href="../assets/timetable.pdf" download>📅 Download the timetable (PDF)</a>
+
 ---
 # Tuesday 10th
-
-<a href="../assets/tuesday_timetable.html" target="_blank">📅 View the Tuesday timetable</a>
 
 ---
 
@@ -255,8 +255,6 @@ An oppertunity for networking over complementary beers and light snacks in the U
 
 
 # Wednesday 11th
-
-📅 [View the Wednesday timetable](https://drive.google.com/file/d/1HnbM-1yhW13wV3gZC3-9HycwaNCNm4hi/view?usp=drive_link)
 
 ---
 

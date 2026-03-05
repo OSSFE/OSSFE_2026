@@ -29,7 +29,7 @@ project:
   # authors: []
   html:
     static: 
-      - assets/tuesday_timetable.html
+      - assets/day_1.pdf
 site:
   template: book-theme
   title: OSSFE 2026
