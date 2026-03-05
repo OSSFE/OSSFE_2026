@@ -175,7 +175,7 @@ SESSION_SCHEDULE: Dict[str, Dict] = {
                 ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Auditorium", "Andrew Davis, UKAEA"),
                 ((2026, 3, 11, 14, 40), (2026, 3, 11, 15, 40), "Projektraum", "Yehor Yudin, Bangor University"),
                 ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Auditorium", "Olivier Hoenen, ITER Organization"),
-                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Projektraum", "TBC, Affiliation"),
+                ((2026, 3, 11, 16, 0), (2026, 3, 11, 17, 0), "Projektraum", "Philipp Nikutta, Proxima Fusion"),
             ],
         )
     },
