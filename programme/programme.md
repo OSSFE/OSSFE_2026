@@ -241,6 +241,7 @@ Number of tutorials: 2
 
 | ID   | Title                                                                                                                                  | Presenter      | Organisation                     |
 |:-----|:---------------------------------------------------------------------------------------------------------------------------------------|:---------------|:---------------------------------|
+| T5   | [Modular Tokamak Design and Simulation Open Source Framework](abstracts/zhurba-modular.md)                                             | Alexei Zhurba  | Next Step Fusion                 |
 | T6   | [TokaLab: A Modular Virtual Tokamak Laboratory for Education, FAIR Principles, and Algorithm Benchmarking](abstracts/rossi-tokalab.md) | Riccardo Rossi | "Tor Vergata" University of Rome |
 
 ---
@@ -438,7 +439,7 @@ Number of presentations: 3
 
 Room: Projektraum
 
-*Chair*: TBC, Affiliation
+*Chair*: Philipp Nikutta, Proxima Fusion
 
 Number of presentations: 3
 
