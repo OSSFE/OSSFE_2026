@@ -30,7 +30,7 @@ Here you will find the schedule and abstracts for the OSSFE 2026 conference
 ---
 # Tuesday 10th
 
-📅 [View the Tuesday timetable](https://drive.google.com/file/d/1m1ygJT4g3T-sKjTWR0mGjlNNTa_11LgQ/view?usp=drive_link)
+<a href="../assets/tuesday_timetable.html" target="_blank">📅 View the Tuesday timetable</a>
 
 ---
 

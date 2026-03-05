@@ -27,6 +27,9 @@ project:
   # title: OSSFE
   # keywords: []
   # authors: []
+  html:
+    static: 
+      - assets/tuesday_timetable.html
 site:
   template: book-theme
   title: OSSFE 2026
