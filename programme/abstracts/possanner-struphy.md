@@ -17,3 +17,4 @@ Struphy is an open-source Python package for plasma physics equations designed f
 
 # Repository
 https://github.com/struphy-hub/struphy
+

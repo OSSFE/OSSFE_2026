@@ -295,6 +295,7 @@ Number of presentations: 3
 |:-----|:----------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|:---------------|
 | G1   | [Deep Learning–Based Surrogate Models and RL Control for Extreme Vacuum Environments in Fusion Research](abstracts/rodríguezllorente-deep.md) | Guillermo Rodríguez Llorente | HI Iberia      |
 | G2   | [Pellet Fueling: AI-Enhanced Surrogate Model HPI2-NN and Integrated Modelling](abstracts/paneraalvarez-pellet.md)                             | Alex Panera Alvarez          | DIFFER         |
+| G3   | [Energy-Aware Kubernetes: Monitoring and Analyzing Fusion Simulation Power Consumption with Kepler](abstracts/kannan-energy.md)               | Shakthi Kannan               | Morton Labs AI |
 
 
 ### Oral Session H
