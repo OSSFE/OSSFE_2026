@@ -471,7 +471,7 @@ Number of tutorials: 2
 
 Room: Auditorium
 
-Presenter: Remi Delaporte-Mathurin
+Presenter: Remi Delaporte-Mathurin and Jonathan Shimwell
 
 ---
 
