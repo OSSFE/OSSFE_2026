@@ -24,6 +24,8 @@ project:
     hidden: true
   - file: venue.md
     hidden: true
+  - file: summary.md
+    hidden: true
   # title: OSSFE
   # keywords: []
   # authors: []
@@ -52,4 +54,6 @@ site:
     url: /contact
   - title: Venue
     url: /venue
+  - title: Summary
+    url: /summary
   domains: []
